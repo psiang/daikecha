@@ -2,7 +2,23 @@
   <div id="manage">
     <el-row :gutter="20"  type="flex" justify="center">
       <el-col :span="3"><div class="grid-content back-block bg-orange"></div></el-col>
-      <el-col :span="15"><div class="grid-content bg-trans-white back-block"></div></el-col>
+      <el-col :span="15"><div class="grid-content bg-trans-white back-block">
+
+        <el-row class="trans-color">
+          <el-col class="trans-color card" :span="5" v-for="project in projectlist" :key="o" :offset="index > 0 ? 2 : 0">
+            <el-card class="trans-color" :body-style="{ padding: '0px'}">
+              <img :src="['static/project/'+ project.imgsrc + '.jpg']" class="image">
+              <div class="trans-color block-under-div">
+                <div class="bottom clearfix trans-color">
+                  <span class="project-name">{{project.name}}</span>
+                  <el-button type="text" class="button">未完成</el-button>
+                </div>
+              </div>
+            </el-card>
+          </el-col>
+        </el-row>
+
+      </div></el-col>
     </el-row>
   </div>
 </template>
@@ -12,6 +28,18 @@ export default {
   name: 'manage',
   data () {
     return {
+      projectlist: [
+        { imgsrc: '1', name: '项目A' },
+        { imgsrc: '2', name: '项目B' },
+        { imgsrc: '3', name: '项目C' },
+        { imgsrc: '4', name: '项目D' },
+        { imgsrc: '5', name: '项目E' },
+        { imgsrc: '6', name: '项目F' },
+        { imgsrc: '7', name: '项目G' },
+        { imgsrc: '8', name: '项目H' },
+        { imgsrc: '9', name: '项目I' },
+        { imgsrc: '10', name: '项目J' },
+      ]
     }
   }
 }
@@ -25,6 +53,42 @@ export default {
     text-align: center;
     color: #2c3e50;
     margin-top: 60px;
+  }
+  .card{
+    margin: 10px;
+  }
+  .trans-color {
+    background: rgba(0, 0, 0, 0);
+    border-color: rgba(0, 0, 0, 0);
+  }
+  .block-under-div{
+    padding: 10px 0px;
+  }
+  .project-name {
+    padding: 0;
+    float: left;
+  }
+  .bottom {
+    margin-top: 5px;
+    line-height: 12px;
+  }
+  .button {
+    padding: 0;
+    float: right;
+    color: #7a7374;
+  }
+  .image {
+    width: 100%;
+    height: 130px;
+    display: block;
+  }
+  .clearfix:before,
+  .clearfix:after {
+      display: table;
+      content: "";
+  }
+  .clearfix:after {
+      clear: both
   }
   .bg-orange {
     background: #f27635;

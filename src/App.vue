@@ -12,7 +12,7 @@ export default {
   data () {
     return {
       note: {
-            backgroundImage: "url(" + require("./assets/background.jpg") + ")",
+            backgroundImage: "url(" + require("./assets/images/background.jpg") + ")",
             backgroundRepeat: "no-repeat",
             backgroundSize: "100% auto",
             height: "100%",
