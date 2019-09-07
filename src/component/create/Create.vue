@@ -155,12 +155,11 @@ export default {
   font-family:'Avenir', Helvetica, Arial, sans-serif, "宋体";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #FFFFFF;
+  background: rgba(241, 240, 237, 0.7);
   text-align: center;
   width: 90%;
   hight: 300px;
   margin: 5% 5% 5%;
-  opacity: 50%;
 }
 .about_input{
   background-color:#FFFFFF;
