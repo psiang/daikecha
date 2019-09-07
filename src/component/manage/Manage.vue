@@ -1,13 +1,13 @@
 <template>
   <div id="manage">
-    <el-row :gutter="20"  type="flex" justify="center">
+    <el-row :gutter="20"  type="flex" justify="center" :style="{width: '100%'}">
       <el-col :span="3"><div class="grid-content back-block bg-orange"></div></el-col>
       <el-col :span="15"><div class="grid-content bg-trans-white back-block">
 
         <vue-scroll :ops="ops">
           <el-row class="trans-color">
             <el-col class="trans-color card" :span="5" v-for="project in projectlist" :key="o" :offset="index > 0 ? 2 : 0">
-              <el-card class="trans-color" :body-style="{ padding: '0px'}">
+              <el-card class="trans-color" :body-style="{ padding: '0px'}" @click.native="dialogFormVisible = true">
                 <img :src="['static/project/'+ project.imgsrc + '.jpg']" class="image">
                 <div class="trans-color block-under-div">
                   <div class="bottom clearfix trans-color">
@@ -20,6 +20,23 @@
           </el-row>
         </vue-scroll>
 
+        <el-dialog title="收货地址" :visible.sync="dialogFormVisible" size="large">
+          <el-form :model="form">
+            <el-form-item label="活动名称" :label-width="formLabelWidth">
+              <el-input v-model="form.name" auto-complete="off"></el-input>
+            </el-form-item>
+            <el-form-item label="活动区域" :label-width="formLabelWidth">
+              <el-select v-model="form.region" placeholder="请选择活动区域">
+                <el-option label="区域一" value="shanghai"></el-option>
+                <el-option label="区域二" value="beijing"></el-option>
+              </el-select>
+            </el-form-item>
+          </el-form>
+          <div slot="footer" class="dialog-footer">
+            <el-button @click="dialogFormVisible = false">取 消</el-button>
+            <el-button type="primary" @click="dialogFormVisible = false">确 定</el-button>
+          </div>
+        </el-dialog>
       </div></el-col>
     </el-row>
   </div>
@@ -35,27 +52,27 @@ export default {
             background: '#20894d',
             size: '6px',
           },
-          vuescroll: {
-            mode: 'slide',
-            sizeStrategy: 'percent',
-            detectResize: true,
-            scroller: {
-              /** Minimum zoom level */
-              minZoom: 1,
-              /** Maximum zoom level */
-              maxZoom: 1
-            }
-          },
-          scrollPanel: {
-            initialScrollY: false,
-            initialScrollX: false,
-            scrollingX: false,
-            scrollingY: true,
-            speed: 300,
-            easing: undefined,
-            verticalNativeBarPos: 'right'
+        vuescroll: {
+          mode: 'slide',
+          sizeStrategy: 'percent',
+          detectResize: true,
+          scroller: {
+            /** Minimum zoom level */
+            minZoom: 1,
+            /** Maximum zoom level */
+            maxZoom: 1
           }
         },
+        scrollPanel: {
+          initialScrollY: false,
+          initialScrollX: false,
+          scrollingX: false,
+          scrollingY: true,
+          speed: 300,
+          easing: undefined,
+          verticalNativeBarPos: 'right'
+        }
+      },
       projectlist: [
         { imgsrc: '1', name: '项目A' },
         { imgsrc: '2', name: '项目B' },
@@ -87,7 +104,19 @@ export default {
         { imgsrc: '5', name: '项目M' },
         { imgsrc: '1', name: '项目N' },
         { imgsrc: '3', name: '项目O' },
-      ]
+      ],
+      dialogFormVisible: false,
+      form: {
+        name: '',
+        region: '',
+        date1: '',
+        date2: '',
+        delivery: false,
+        type: [],
+        resource: '',
+        desc: ''
+      },
+      formLabelWidth: '120px'
     }
   }
 }
@@ -148,7 +177,7 @@ export default {
     height: 700px;
   }
   .el-row {
-    margin-bottom: 20px;
+    padding-bottom: 80px;
     &:last-child {
       margin-bottom: 0;
     }

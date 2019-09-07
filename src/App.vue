@@ -15,11 +15,8 @@ export default {
             backgroundImage: "url(" + require("./assets/images/background.jpg") + ")",
             backgroundRepeat: "no-repeat",
             backgroundSize: "100% auto",
-            height: "100%",
-            weight: "100%",
-            margin: "0",
-            padding: "0",
-            backgroundAttachment: "fixed"
+            width: "100%",
+            backgroundAttachment: "fixed",
           }
     }
   },
