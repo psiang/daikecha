@@ -25,12 +25,9 @@ export default {
 </script>
 
 <style>
-<<<<<<< Updated upstream
-=======
 #app {
 }
 body{
   margin:0;
 }
->>>>>>> Stashed changes
 </style>
