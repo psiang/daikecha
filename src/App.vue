@@ -1,7 +1,9 @@
 <template>
-  <div id="app" :style='note'>
-    <navigation></navigation> <br>
-    <router-view></router-view>
+  <div id="app">
+    <div :style='note'>
+      <navigation></navigation> <br>
+      <router-view></router-view>
+    </div>
   </div>
 </template>
 
@@ -14,12 +16,10 @@ export default {
       note: {
             backgroundImage: "url(" + require("./assets/images/background.jpg") + ")",
             backgroundRepeat: "no-repeat",
-            backgroundSize: "100% auto",
-            height: "100%",
-            weight: "100%",
-            margin: "0",
-            padding: "0",
-            backgroundAttachment: "fixed"
+            backgroundSize: "100% 100%",
+            width: "100%",
+            height: "800px",
+            backgroundAttachment: "fixed",
           }
     }
   },
@@ -28,4 +28,9 @@ export default {
 </script>
 
 <style>
+#app {
+}
+body{
+  margin:0;
+}
 </style>

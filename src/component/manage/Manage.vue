@@ -1,13 +1,13 @@
 <template>
   <div id="manage">
-    <el-row :gutter="20"  type="flex" justify="center">
+    <el-row :gutter="20"  type="flex" justify="center" :style="{width: '100%'}">
       <el-col :span="3"><div class="grid-content back-block bg-orange"></div></el-col>
       <el-col :span="15"><div class="grid-content bg-trans-white back-block">
 
         <vue-scroll :ops="ops">
           <el-row class="trans-color">
             <el-col class="trans-color card" :span="5" v-for="project in projectlist" :key="o" :offset="index > 0 ? 2 : 0">
-              <el-card class="trans-color" :body-style="{ padding: '0px'}">
+              <el-card class="trans-color" :body-style="{ padding: '0px'}" @click.native="dialogFormVisible = true">
                 <img :src="['static/project/'+ project.imgsrc + '.jpg']" class="image">
                 <div class="trans-color block-under-div">
                   <div class="bottom clearfix trans-color">
@@ -19,7 +19,36 @@
             </el-col>
           </el-row>
         </vue-scroll>
+        <!--对话中的内容-->
+        <el-dialog title="提示" :visible.sync="dialogFormVisible" size="full">
+          <el-row :gutter="15"  type="flex" justify="center" :style="{width: '100%'}">
+            <el-col :span="10"><div class="grid-content back-block-in bg-orange"></div></el-col>
+            <el-col :span="20"><div class="grid-content bg-trans-white back-block-in">
 
+              <vue-scroll :ops="ops">
+                <el-row class="trans-color">
+                  <el-col class="trans-color card" :span="5" v-for="project in projectlist" :key="o" :offset="index > 0 ? 2 : 0">
+                    <el-card class="trans-color" :body-style="{ padding: '0px'}" @click.native="dialogFormVisible = true">
+                      <img :src="['static/project/'+ project.imgsrc + '.jpg']" class="image">
+                      <div class="trans-color block-under-div">
+                        <div class="bottom clearfix trans-color">
+                          <span class="project-name">{{project.name}}</span>
+                          <el-button type="text" class="button">未完成</el-button>
+                        </div>
+                      </div>
+                    </el-card>
+                  </el-col>
+                </el-row>
+              </vue-scroll>
+
+            </div></el-col>
+
+            <el-col :span="2"><div class="grid-content trans-color back-block-in">
+              <i class="el-icon-close icon-close" @click="dialogFormVisible = false"></i>
+            </div></el-col>
+          </el-row>
+
+        </el-dialog>
       </div></el-col>
     </el-row>
   </div>
@@ -35,27 +64,27 @@ export default {
             background: '#20894d',
             size: '6px',
           },
-          vuescroll: {
-            mode: 'slide',
-            sizeStrategy: 'percent',
-            detectResize: true,
-            scroller: {
-              /** Minimum zoom level */
-              minZoom: 1,
-              /** Maximum zoom level */
-              maxZoom: 1
-            }
-          },
-          scrollPanel: {
-            initialScrollY: false,
-            initialScrollX: false,
-            scrollingX: false,
-            scrollingY: true,
-            speed: 300,
-            easing: undefined,
-            verticalNativeBarPos: 'right'
+        vuescroll: {
+          mode: 'slide',
+          sizeStrategy: 'percent',
+          detectResize: true,
+          scroller: {
+            /** Minimum zoom level */
+            minZoom: 1,
+            /** Maximum zoom level */
+            maxZoom: 1
           }
         },
+        scrollPanel: {
+          initialScrollY: false,
+          initialScrollX: false,
+          scrollingX: false,
+          scrollingY: true,
+          speed: 300,
+          easing: undefined,
+          verticalNativeBarPos: 'right'
+        }
+      },
       projectlist: [
         { imgsrc: '1', name: '项目A' },
         { imgsrc: '2', name: '项目B' },
@@ -87,7 +116,19 @@ export default {
         { imgsrc: '5', name: '项目M' },
         { imgsrc: '1', name: '项目N' },
         { imgsrc: '3', name: '项目O' },
-      ]
+      ],
+      dialogFormVisible: false,
+      form: {
+        name: '',
+        region: '',
+        date1: '',
+        date2: '',
+        delivery: false,
+        type: [],
+        resource: '',
+        desc: ''
+      },
+      formLabelWidth: '120px'
     }
   }
 }
@@ -102,6 +143,25 @@ export default {
     color: #2c3e50;
     margin-top: 60px;
   }
+  .icon-close {
+    font-size: 30px;
+    color: rgba(255,255,255,1);
+    font-weight: 200;
+  }
+  .el-dialog__header {
+    visibility: collapse;
+  }
+  .el-dialog, .el-pager
+  li {
+    background: rgba(0, 0, 0, 0);
+    border-color: rgba(0, 0, 0, 0);
+    -webkit-box-sizing: border-box;
+  }
+  .el-dialog {
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0);
+    box-shadow: 0 1px 3px rgba(0,0,0,0)
+  }
+
   .card{
     margin: 10px;
   }
@@ -145,10 +205,12 @@ export default {
     background: rgba(241, 240, 237, 0.7);
   }
   .back-block {
-    height: 700px;
+    height: 600px;
+  }
+  .back-block-in {
+    height: 300px;
   }
   .el-row {
-    margin-bottom: 20px;
     &:last-child {
       margin-bottom: 0;
     }
@@ -171,6 +233,5 @@ export default {
   }
   .row-bg {
     padding: 10px 0;
-    background-color: #f9fafc;
   }
 </style>
