@@ -211,7 +211,6 @@ export default {
     height: 300px;
   }
   .el-row {
-    padding-bottom: 80px;
     &:last-child {
       margin-bottom: 0;
     }

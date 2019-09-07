@@ -1,7 +1,9 @@
 <template>
-  <div id="app" :style='note'>
-    <navigation></navigation> <br>
-    <router-view></router-view>
+  <div id="app">
+    <div :style='note'>
+      <navigation></navigation> <br>
+      <router-view></router-view>
+    </div>
   </div>
 </template>
 
@@ -16,6 +18,7 @@ export default {
             backgroundRepeat: "no-repeat",
             backgroundSize: "100% 100%",
             width: "100%",
+            height: "800px",
             backgroundAttachment: "fixed",
           }
     }
