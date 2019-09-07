@@ -14,7 +14,7 @@ export default {
       note: {
             backgroundImage: "url(" + require("./assets/images/background.jpg") + ")",
             backgroundRepeat: "no-repeat",
-            backgroundSize: "100% auto",
+            backgroundSize: "100% 100%",
             width: "100%",
             backgroundAttachment: "fixed",
           }
@@ -25,4 +25,12 @@ export default {
 </script>
 
 <style>
+<<<<<<< Updated upstream
+=======
+#app {
+}
+body{
+  margin:0;
+}
+>>>>>>> Stashed changes
 </style>
