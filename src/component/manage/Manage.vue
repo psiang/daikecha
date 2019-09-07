@@ -19,23 +19,35 @@
             </el-col>
           </el-row>
         </vue-scroll>
+        <!--对话中的内容-->
+        <el-dialog title="提示" :visible.sync="dialogFormVisible" size="full">
+          <el-row :gutter="15"  type="flex" justify="center" :style="{width: '100%'}">
+            <el-col :span="10"><div class="grid-content back-block-in bg-orange"></div></el-col>
+            <el-col :span="20"><div class="grid-content bg-trans-white back-block-in">
 
-        <el-dialog title="收货地址" :visible.sync="dialogFormVisible" size="large">
-          <el-form :model="form">
-            <el-form-item label="活动名称" :label-width="formLabelWidth">
-              <el-input v-model="form.name" auto-complete="off"></el-input>
-            </el-form-item>
-            <el-form-item label="活动区域" :label-width="formLabelWidth">
-              <el-select v-model="form.region" placeholder="请选择活动区域">
-                <el-option label="区域一" value="shanghai"></el-option>
-                <el-option label="区域二" value="beijing"></el-option>
-              </el-select>
-            </el-form-item>
-          </el-form>
-          <div slot="footer" class="dialog-footer">
-            <el-button @click="dialogFormVisible = false">取 消</el-button>
-            <el-button type="primary" @click="dialogFormVisible = false">确 定</el-button>
-          </div>
+              <vue-scroll :ops="ops">
+                <el-row class="trans-color">
+                  <el-col class="trans-color card" :span="5" v-for="project in projectlist" :key="o" :offset="index > 0 ? 2 : 0">
+                    <el-card class="trans-color" :body-style="{ padding: '0px'}" @click.native="dialogFormVisible = true">
+                      <img :src="['static/project/'+ project.imgsrc + '.jpg']" class="image">
+                      <div class="trans-color block-under-div">
+                        <div class="bottom clearfix trans-color">
+                          <span class="project-name">{{project.name}}</span>
+                          <el-button type="text" class="button">未完成</el-button>
+                        </div>
+                      </div>
+                    </el-card>
+                  </el-col>
+                </el-row>
+              </vue-scroll>
+
+            </div></el-col>
+
+            <el-col :span="2"><div class="grid-content trans-color back-block-in">
+              <i class="el-icon-close icon-close" @click="dialogFormVisible = false"></i>
+            </div></el-col>
+          </el-row>
+
         </el-dialog>
       </div></el-col>
     </el-row>
@@ -131,6 +143,25 @@ export default {
     color: #2c3e50;
     margin-top: 60px;
   }
+  .icon-close {
+    font-size: 30px;
+    color: rgba(255,255,255,1);
+    font-weight: 200;
+  }
+  .el-dialog__header {
+    visibility: collapse;
+  }
+  .el-dialog, .el-pager
+  li {
+    background: rgba(0, 0, 0, 0);
+    border-color: rgba(0, 0, 0, 0);
+    -webkit-box-sizing: border-box;
+  }
+  .el-dialog {
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0);
+    box-shadow: 0 1px 3px rgba(0,0,0,0)
+  }
+
   .card{
     margin: 10px;
   }
@@ -174,7 +205,10 @@ export default {
     background: rgba(241, 240, 237, 0.7);
   }
   .back-block {
-    height: 700px;
+    height: 600px;
+  }
+  .back-block-in {
+    height: 300px;
   }
   .el-row {
     padding-bottom: 80px;
