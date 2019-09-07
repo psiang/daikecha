@@ -158,7 +158,7 @@ export default {
   background: rgba(241, 240, 237, 0.7);
   text-align: center;
   width: 90%;
-  hight: 300px;
+  height: 500px;
   margin: 5% 5% 5%;
 }
 .about_input{
