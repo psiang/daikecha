@@ -1,6 +1,6 @@
 <template>
-  <div id="person">
-<el-row type="flex" class="row-bg" justify="space-between" >
+  <div id="person" class="trans-color">
+<el-row type="flex" class="row-bg trans-color" justify="space-between" >
   <el-col :span="6" offset="1" >
  <div class="grid-content bg-trans-white back-block">
     <div class="grid-content bg-purple">
@@ -166,6 +166,10 @@ export default {
 
 </script>
 <style>
+  .trans-color {
+    background: rgba(0, 0, 0, 0);
+    border-color: rgba(0, 0, 0, 0);
+  }
   .el-row {
     margin-bottom: 20px;
     &:last-child {
@@ -190,7 +194,6 @@ export default {
   }
   .row-bg {
     padding: 10px 0;
-    background-color: #f9fafc;
   }
   .text {
       font-size: 14px;
