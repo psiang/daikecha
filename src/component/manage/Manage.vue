@@ -200,6 +200,5 @@ export default {
   }
   .row-bg {
     padding: 10px 0;
-    background-color: #f9fafc;
   }
 </style>
