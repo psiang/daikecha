@@ -3,7 +3,10 @@
     <el-row :gutter="20"  type="flex" justify="center" :style="{width: '100%'}">
       <el-col :span="3"><div class="grid-content back-block bg-orange"></div></el-col>
       <el-col :span="15"><div class="grid-content bg-trans-white back-block">
-
+        请输入关键字：<input type="text" v-model="keyword" @keyup="sendJsonP(keyword)">
+        <ul>
+            <li v-for="r in result">{{r}}</li>
+        </ul>
         <vue-scroll :ops="ops">
           <el-row class="trans-color">
             <el-col class="trans-color card" :span="5" v-for="project in projectlist" :key="o" :offset="index > 0 ? 2 : 0">
@@ -59,6 +62,8 @@ export default {
   name: 'manage',
   data () {
     return {
+      keyword: '',
+      result: '',
       ops: {
         bar: {
             background: '#20894d',
@@ -130,7 +135,26 @@ export default {
       },
       formLabelWidth: '120px'
     }
-  }
+  },
+  mounted: function() {
+  },
+  methods: {
+    sendJsonP(keyword) {
+      let url = 'https://www.baidu.com/sugrec?pre=1&p=3&ie=utf-8&json=1&prod=pc&from=pc_web';
+      this.$http.jsonp(url, {
+        params: {
+          wd: keyword
+        },
+        jsonp: 'cb'//jsonp默认是callback,百度缩写成了cb，所以需要指定下                     }
+      }).then(res => {
+        if (res.data.g) {
+          this.result = res.data.g.map(x => x['q']);
+        } else {
+          this.result = [];
+        }
+      });
+    }
+	}
 }
 </script>
 
