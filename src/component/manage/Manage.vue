@@ -24,20 +24,35 @@
         </vue-scroll>
         <!--对话中的内容-->
         <el-dialog title="提示" :visible.sync="dialogFormVisible" size="full">
-          <el-row :gutter="15"  type="flex" justify="center" :style="{width: '100%'}">
-            <el-col :span="10"><div class="grid-content back-block-in bg-orange"></div></el-col>
-            <el-col :span="20"><div class="grid-content bg-trans-white back-block-in">
+          <el-row :gutter="20"  type="flex" justify="center" :style="{width: '100%'}">
+            <el-col :span="10"><div class="grid-content back-block-in bg-gray"></div></el-col>
+            <el-col :span="18"><div class="grid-content bg-gray back-block-in">
 
-              <vue-scroll :ops="ops">
+              <p class="large-title">动&nbsp&nbsp&nbsp态</p>
+              <vue-scroll :ops="ops" class="scroll-in">
                 <el-row class="trans-color">
-                  <el-col class="trans-color card" :span="5" v-for="project in projectlist" :key="o" :offset="index > 0 ? 2 : 0">
+                  <el-col class="trans-color card-in" :span="24" v-for="project in projectlist" :key="o" :offset="index > 0 ? 2 : 0">
                     <el-card class="trans-color" :body-style="{ padding: '0px'}" @click.native="dialogFormVisible = true">
-                      <img :src="['static/project/'+ project.imgsrc + '.jpg']" class="image">
-                      <div class="trans-color block-under-div">
-                        <div class="bottom clearfix trans-color">
-                          <span class="project-name">{{project.name}}</span>
-                          <el-button type="text" class="button">未完成</el-button>
-                        </div>
+                      <p class="small-title">2019年09月09日</p>
+                      <div class="bg-white block-under-div-in">
+                          <p class="small-title" style="padding-top:20px;padding-bottom:10px;">货物状态</p>
+                          <el-row :gutter="1"  type="flex" justify="center" :style="{width: '100%'}">
+                            <el-col :span="12"><div class="grid-content trans-color">
+                              <p class="small-text">快递单号:123456789</p><br>
+                              <p class="small-text">发件方:湖北省顺庆有限公司</p><br>
+                              <p class="small-text">收件方:东风汽车物流管理部门</p><br>
+                              <p class="small-text">件数:51件&nbsp&nbsp总质量:15吨</p><br>
+                              <p class="small-text">运输公司:顺丰快递</p><br>
+                            </div></el-col>
+                            <el-col :span="12"><div class="grid-content trans-color">
+                              <p class="small-text">收件地址:东风物流三号仓</p><br>
+                              <p class="small-text">收件时间:2019年09月09日18:00</p><br>
+                              <p class="small-text">收件员:张三</p><br>
+                              <p class="small-text">派件员:李四&nbsp&nbsp快递状态:揽收</p><br>
+                              <p class="small-text">补充信息:上次货物补发</p><br>
+                            </div></el-col>
+                          </el-row>
+                          <img :src="['static/project/'+ project.imgsrc + '.jpg']" class="image-in">
                       </div>
                     </el-card>
                   </el-col>
@@ -167,6 +182,38 @@ export default {
     color: #2c3e50;
     margin-top: 60px;
   }
+  .scroll-in {
+    margin-left: 20px;
+    width: 95% !important;
+    height: 90% !important;
+  }
+  .large-title {
+    margin: 0;
+    font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+    font-size: 17px;
+    text-align: left;
+    margin-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .small-title {
+    margin: 0;
+    font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+    font-size: 14px;
+    text-align: left;
+    margin: 0px;
+    padding: 0px;
+    color: #000000;
+  }
+  .small-text {
+    margin: 0;
+    font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+    font-size: 12px;
+    text-align: left;
+    margin: 0px;
+    padding: 0px;
+    color: #5e616d;
+  }
   .icon-close {
     font-size: 30px;
     color: rgba(255,255,255,1);
@@ -174,6 +221,7 @@ export default {
   }
   .el-dialog__header {
     visibility: collapse;
+    display: none;
   }
   .el-dialog, .el-pager
   li {
@@ -183,11 +231,16 @@ export default {
   }
   .el-dialog {
     -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0);
-    box-shadow: 0 1px 3px rgba(0,0,0,0)
+    box-shadow: 0 1px 3px rgba(0,0,0,0);
+    width: 90%;
+    margin-top: 10px !important;
   }
 
   .card{
     margin: 10px;
+  }
+  .card-in{
+    margin-bottom: 20px;
   }
   .trans-color {
     background: rgba(0, 0, 0, 0);
@@ -195,6 +248,9 @@ export default {
   }
   .block-under-div{
     padding: 10px 0px;
+  }
+  .block-under-div-in{
+    padding-left: 20px;
   }
   .project-name {
     padding: 0;
@@ -214,6 +270,12 @@ export default {
     height: 130px;
     display: block;
   }
+  .image-in {
+    margin-bottom: 20px;
+    width: auto;
+    height: 130px;
+    display: block;
+  }
   .clearfix:before,
   .clearfix:after {
       display: table;
@@ -228,11 +290,17 @@ export default {
   .bg-trans-white {
     background: rgba(241, 240, 237, 0.7);
   }
+  .bg-gray {
+    background: rgba(241, 240, 237, 1);
+  }
+  .bg-white {
+    background: rgba(255, 255, 255, 1);
+  }
   .back-block {
     height: 600px;
   }
   .back-block-in {
-    height: 300px;
+    height: 600px;
   }
   .el-row {
     &:last-child {
