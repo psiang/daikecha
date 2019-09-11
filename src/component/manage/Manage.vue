@@ -1,15 +1,15 @@
 <template>
   <div id="manage">
     <el-row :gutter="20"  type="flex" justify="center" :style="{width: '100%'}">
-      <el-col :span="3"><div class="grid-content back-block bg-orange"></div></el-col>
-      <el-col :span="15"><div class="grid-content bg-trans-white back-block">
+      <el-col class="el-col-radius" :span="3"><div class="grid-content back-block bg-orange"></div></el-col>
+      <el-col class="el-col-radius" :span="15"><div class="grid-content bg-trans-white back-block">
         请输入关键字：<input type="text" v-model="keyword" @keyup="sendJsonP(keyword)">
         <ul>
             <li v-for="r in result">{{r}}</li>
         </ul>
         <vue-scroll :ops="ops">
           <el-row class="trans-color">
-            <el-col class="trans-color card" :span="5" v-for="project in projectlist" :key="o" :offset="index > 0 ? 2 : 0">
+            <el-col class="trans-color card el-col-radius" :span="5" v-for="project in projectlist" :key="o" :offset="index > 0 ? 2 : 0">
               <el-card class="trans-color" :body-style="{ padding: '0px'}" @click.native="dialogFormVisible = true">
                 <img :src="['static/project/'+ project.imgsrc + '.jpg']" class="image">
                 <div class="trans-color block-under-div">
@@ -25,26 +25,57 @@
         <!--对话中的内容-->
         <el-dialog title="提示" :visible.sync="dialogFormVisible" size="full">
           <el-row :gutter="20"  type="flex" justify="center" :style="{width: '100%'}">
-            <el-col :span="10"><div class="grid-content back-block-in bg-gray"></div></el-col>
-            <el-col :span="18"><div class="grid-content bg-gray back-block-in">
+            <!--<el-col class="el-col-radius" :span="10"><div class="grid-content back-block-in bg-gray"></div></el-col>-->
+            <el-col class="el-col-radius" :span="18"><div class="grid-content bg-gray back-block-in">
 
               <p class="large-title">动&nbsp&nbsp&nbsp态</p>
+              <el-button type="primary" icon="edit" class="btn-edit" @click="openForm"><i class="el-icon-edit"></i></el-button>
               <vue-scroll :ops="ops" class="scroll-in">
                 <el-row class="trans-color">
-                  <el-col class="trans-color card-in" :span="24" v-for="project in projectlist" :key="o" :offset="index > 0 ? 2 : 0">
-                    <el-card class="trans-color" :body-style="{ padding: '0px'}" @click.native="dialogFormVisible = true">
+
+                  <el-col class="trans-color card-in el-col-radius" :style="editForm" :span="24" :key="o" :offset="index > 0 ? 2 : 0">
+                    <el-card class="trans-color" :body-style="{ padding: '0px'}">
+                      <p class="small-title">2019年09月09日</p>
+                      <div class="bg-white block-under-div-in" style="padding-bottom: 20px;">
+                          <p class="small-title" style="padding-top:20px;padding-bottom:10px;">货物状态</p>
+                          <el-row :gutter="1"  type="flex" justify="center" :style="{width: '100%'}" style="margin-bottom: 20px;">
+                            <el-col  class="el-col-radius" :span="12"><div class="grid-content trans-color">
+                              <p class="small-text">快递单号:<el-input v-model="form.dn" class="form-input"></el-input></p><br>
+                              <p class="small-text">发件方:<el-input v-model="form.fjf" class="form-input"></el-input></p><br>
+                              <p class="small-text">收件方:<el-input v-model="form.sjf" class="form-input"></el-input></p><br>
+                              <p class="small-text">件数:<el-input v-model="form.js" class="form-input"></el-input></p><br>
+                              <p class="small-text">总质量:<el-input v-model="form.zzl" class="form-input"></el-input></p><br>
+                              <p class="small-text">运输公司:<el-input v-model="form.ysgs" class="form-input"></el-input></p><br>
+                            </div></el-col>
+                            <el-col  class="el-col-radius" :span="12"><div class="grid-content trans-color">
+                              <p class="small-text">收件地址:<el-input v-model="form.sjdz" class="form-input"></el-input></p><br>
+                              <p class="small-text">收件时间:<el-input v-model="form.sjsj" class="form-input"></el-input></p><br>
+                              <p class="small-text">收件员:<el-input v-model="form.sjy" class="form-input"></el-input></p><br>
+                              <p class="small-text">派件员:<el-input v-model="form.pjy" class="form-input"></el-input></p><br>
+                              <p class="small-text">快递状态:<el-input v-model="form.kdxx" class="form-input"></el-input></p><br>
+                              <p class="small-text">补充信息:<el-input v-model="form.bcxx" class="form-input"></el-input></p><br>
+                            </div></el-col>
+                          </el-row>
+                          <el-button type="primary" @click="confirmForm">确认</el-button>
+                          <el-button @click="cancelForm">取消</el-button>
+                      </div>
+                    </el-card>
+                  </el-col>
+
+                  <el-col class="trans-color card-in el-col-radius" :span="24" v-for="project in projectlist" :key="o" :offset="index > 0 ? 2 : 0">
+                    <el-card class="trans-color" :body-style="{ padding: '0px'}">
                       <p class="small-title">2019年09月09日</p>
                       <div class="bg-white block-under-div-in">
                           <p class="small-title" style="padding-top:20px;padding-bottom:10px;">货物状态</p>
                           <el-row :gutter="1"  type="flex" justify="center" :style="{width: '100%'}">
-                            <el-col :span="12"><div class="grid-content trans-color">
+                            <el-col  class="el-col-radius" :span="12"><div class="grid-content trans-color">
                               <p class="small-text">快递单号:123456789</p><br>
                               <p class="small-text">发件方:湖北省顺庆有限公司</p><br>
                               <p class="small-text">收件方:东风汽车物流管理部门</p><br>
                               <p class="small-text">件数:51件&nbsp&nbsp总质量:15吨</p><br>
                               <p class="small-text">运输公司:顺丰快递</p><br>
                             </div></el-col>
-                            <el-col :span="12"><div class="grid-content trans-color">
+                            <el-col  class="el-col-radius" :span="12"><div class="grid-content trans-color">
                               <p class="small-text">收件地址:东风物流三号仓</p><br>
                               <p class="small-text">收件时间:2019年09月09日18:00</p><br>
                               <p class="small-text">收件员:张三</p><br>
@@ -61,7 +92,7 @@
 
             </div></el-col>
 
-            <el-col :span="2"><div class="grid-content trans-color back-block-in">
+            <el-col  class="el-col-radius" :span="2"><div class="grid-content trans-color back-block-in">
               <i class="el-icon-close icon-close" @click="dialogFormVisible = false"></i>
             </div></el-col>
           </el-row>
@@ -77,6 +108,23 @@ export default {
   name: 'manage',
   data () {
     return {
+      editForm: {
+        display: "none",
+      },
+      form_display: true,
+      form: {
+        fjf: '',
+        sjf: '',
+        js: '',
+        zzl: '',
+        ysgs: '',
+        sjdz: '',
+        sjsj: '',
+        sjy: '',
+        pjy: '',
+        kdzt: '',
+        bcxx: '',
+      },
       keyword: '',
       result: '',
       ops: {
@@ -168,6 +216,15 @@ export default {
           this.result = [];
         }
       });
+    },
+    openForm() {
+        this.$data.editForm.display = 'inline';
+    },
+    confirmForm() {
+        this.$data.editForm.display = 'none';
+    },
+    cancelForm() {
+        this.$data.editForm.display = 'none';
     }
 	}
 }
@@ -181,6 +238,19 @@ export default {
     text-align: center;
     color: #2c3e50;
     margin-top: 60px;
+  }
+  .form-input {
+    width:50%;
+  }
+  .btn-edit {
+    position: absolute;
+    z-index: 100;
+    right: 10%;
+    bottom: 100px;
+  }
+  .grid-content {
+    border-radius: 4px !important;
+    min-height: 36px;
   }
   .scroll-in {
     margin-left: 20px;
@@ -309,6 +379,9 @@ export default {
   }
   .el-col {
     border-radius: 4px;
+  }
+  .el-col-radius {
+    border-radius: 1px !important;
   }
   .bg-purple-dark {
     background: #99a9bf;
