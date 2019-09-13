@@ -3,10 +3,10 @@
     <el-row :gutter="20"  type="flex" justify="center" :style="{width: '100%'}">
       <el-col class="el-col-radius" :span="3"><div class="grid-content back-block bg-orange"></div></el-col>
       <el-col class="el-col-radius" :span="15"><div class="grid-content bg-trans-white back-block">
-        请输入关键字：<input type="text" v-model="keyword" @keyup="sendJsonP(keyword)">
+        <!--请输入关键字：<input type="text" v-model="keyword" @keyup="sendJsonP(keyword)">
         <ul>
             <li v-for="r in result">{{r}}</li>
-        </ul>
+        </ul>-->
         <vue-scroll :ops="ops">
           <el-row class="trans-color">
             <el-col class="trans-color card el-col-radius" :span="5" v-for="project in projectlist" :key="o" :offset="index > 0 ? 2 : 0">
@@ -14,8 +14,8 @@
                 <img :src="['static/project/'+ project.imgsrc + '.jpg']" class="image">
                 <div class="trans-color block-under-div">
                   <div class="bottom clearfix trans-color">
-                    <span class="project-name">{{project.name}}</span>
-                    <el-button type="text" class="button">未完成</el-button>
+                    <span class="project-name">{{project.p_Name}}</span>
+                    <el-button type="text" class="button">{{project.p_Type}}</el-button>
                   </div>
                 </div>
               </el-card>
@@ -154,7 +154,7 @@ export default {
         }
       },
       projectlist: [
-        { imgsrc: '1', name: '项目A' },
+        /*{ imgsrc: '1', name: '项目A' },
         { imgsrc: '2', name: '项目B' },
         { imgsrc: '3', name: '项目C' },
         { imgsrc: '4', name: '项目D' },
@@ -183,7 +183,7 @@ export default {
         { imgsrc: '4', name: '项目L' },
         { imgsrc: '5', name: '项目M' },
         { imgsrc: '1', name: '项目N' },
-        { imgsrc: '3', name: '项目O' },
+        { imgsrc: '3', name: '项目O' },*/
       ],
       dialogFormVisible: false,
       form: {
@@ -200,28 +200,36 @@ export default {
     }
   },
   mounted: function() {
+    let url = 'http://140.143.209.173:8000/api/allprojects';
+    this.$axios.post(url, {
+      u_Count:"1234567890"
+    })
+    .then(function (response) {
+      console.log(response);
+      this.allprojects = res.all_projects;
+    })
+    .catch(function (error) {
+      console.log(error);
+    });
   },
   methods: {
     sendJsonP(keyword) {
-      let url = 'https://www.baidu.com/sugrec?pre=1&p=3&ie=utf-8&json=1&prod=pc&from=pc_web';
-      this.$http.jsonp(url, {
-        params: {
-          wd: keyword
-        },
-        jsonp: 'cb'//jsonp默认是callback,百度缩写成了cb，所以需要指定下                     }
-      }).then(res => {
-        if (res.data.g) {
-          this.result = res.data.g.map(x => x['q']);
-        } else {
-          this.result = [];
-        }
-      });
+
     },
     openForm() {
-        this.$data.editForm.display = 'inline';
+        if (this.$data.editForm.display == 'none') {
+         this.$data.editForm.display = 'inline';
+        }
+        else {
+          this.$data.editForm.display = 'none';
+        }
     },
     confirmForm() {
         this.$data.editForm.display = 'none';
+        this.$message({
+          message: '添加成功',
+          type: 'success'
+        });
     },
     cancelForm() {
         this.$data.editForm.display = 'none';
