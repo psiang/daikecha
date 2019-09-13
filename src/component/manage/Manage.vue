@@ -200,9 +200,9 @@ export default {
     }
   },
   mounted: function() {
-    let url = 'http://140.143.209.173:8000/api/allprojects';
+    let url = 'http://140.143.209.173:8000/api/allprojects/';
     this.$axios.post(url, {
-      u_Count:"1234567890"
+      u_Count:"2345678901"
     })
     .then(function (response) {
       console.log(response);
