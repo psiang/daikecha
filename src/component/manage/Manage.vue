@@ -10,12 +10,12 @@
         <vue-scroll :ops="ops">
           <el-row class="trans-color">
             <el-col class="trans-color card el-col-radius" :span="5" v-for="project in projectlist" :key="o" :offset="index > 0 ? 2 : 0">
-              <el-card class="trans-color" :body-style="{ padding: '0px'}" @click.native="dialogFormVisible = true">
-                <img :src="['static/project/'+ project.imgsrc + '.jpg']" class="image">
+              <el-card class="trans-color" :body-style="{ padding: '0px'}" @click.native="dialogFormVisible = true, clickDialog(project.p_Type,project.p_Num)">
+                <img :src="['static/project/'+ project.p_Type + '.png']" class="image">
                 <div class="trans-color block-under-div">
                   <div class="bottom clearfix trans-color">
                     <span class="project-name">{{project.p_Name}}</span>
-                    <el-button type="text" class="button">{{project.p_Type}}</el-button>
+                    <el-button type="text" class="button">{{project.p_Statu}}</el-button>
                   </div>
                 </div>
               </el-card>
@@ -83,7 +83,6 @@
                               <p class="small-text">补充信息:上次货物补发</p><br>
                             </div></el-col>
                           </el-row>
-                          <img :src="['static/project/'+ project.imgsrc + '.jpg']" class="image-in">
                       </div>
                     </el-card>
                   </el-col>
@@ -200,21 +199,31 @@ export default {
     }
   },
   mounted: function() {
+    var that = this;
     let url = 'http://140.143.209.173:8000/api/allprojects/';
     this.$axios.post(url, {
       u_Count:"2345678901"
     })
-    .then(function (response) {
-      console.log(response);
-      this.allprojects = res.all_projects;
+    .then(function (res) {
+      console.log(res);
+      that.projectlist = res.data.all_projects;
+      console.log(this.projectlist);
     })
     .catch(function (error) {
       console.log(error);
     });
   },
   methods: {
-    sendJsonP(keyword) {
-
+    clickDialog(type, num) {
+      var that = this;
+      let url = 'localhost:8080/block/query/logistics?logisticsCode=' + num;
+      this.$axios.post(url)
+      .then(function (res) {
+        console.log(res);
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
     },
     openForm() {
         if (this.$data.editForm.display == 'none') {
