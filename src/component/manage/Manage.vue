@@ -185,6 +185,7 @@ export default {
         { imgsrc: '3', name: '项目O' },*/
       ],
       dialogFormVisible: false,
+      u_Count: "2345678901",
       form: {
         name: '',
         region: '',
@@ -202,7 +203,7 @@ export default {
     var that = this;
     let url = 'http://140.143.209.173:8000/api/allprojects/';
     this.$axios.post(url, {
-      u_Count:"2345678901"
+      u_Count:this.u_Count
     })
     .then(function (res) {
       console.log(res);

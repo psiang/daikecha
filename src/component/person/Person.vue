@@ -13,13 +13,13 @@
                <div style="position:relative;margin-top:30px;">
                  <img src="../../assets/logo.png" class="head-image" style="float:left;margin-left:20px;margin-right:20px;">
                  <div style="">
-                   <p style="font-size:15px; margin:0;font-family:'PingFang SC';">用户账号&nbsp{{user.u_Count}}</p>
+                   <p style="font-size:15px; margin:0;font-family:'PingFang SC';">用户账号&nbsp{{u_Count}}</p>
                    <p style="font-size:15px; margin:0;font-family:'PingFang SC';color:#5e616d;">{{ user.u_PCount}}个项目</p>
                  </div>
                </div>
 
                <div id="person" style="position:relative;margin-top:30px;margin-left:20px;">
-                  <p style="margin:0;font-size:15px;font-family:'PingFang SC'">用户昵称&nbsp  <font>{{user.u_Nickname}}</font></p>
+                  <!--<p style="margin:0;font-size:15px;font-family:'PingFang SC'">用户昵称&nbsp  <font>{{user.u_Nickname}}</font></p>-->
                   <p style="margin:0;margin-top:10px;font-size:15px;font-family:'PingFang SC'">公司名称&nbsp <font>{{user.c_Name}}</font></p>
                   <p style="margin:0;margin-top:10px;font-size:15px;font-family:'PingFang SC'">公司信用分数&nbsp <font>{{user.credit_Csource}}</font></p>
                </div>
@@ -74,7 +74,7 @@
                      </el-card>
                  <div class="block">
                        <div style="position:relative; margin-top:10px;margin-left:20px;">
-                     <el-button type="success" native-type = "submit">加入</el-button>
+                     <el-button type="success" native-type = "submit" @click="joinIn(input.input6)">加入</el-button>
                        </div>
                  </div>
             </div>
@@ -116,17 +116,18 @@
 </template>
 
 <script>
+import { Message } from 'element-ui';
 export default {
   name: 'person',
   data () {
     return {
+      u_Count: "2345678901",
       user:{
-      u_Count: 'aa',
       u_PCount: '13',
       c_Name: 'AA',
-      u_Nickname: 'AA',
+      /*u_Nickname: 'AA',
       p_Name: '东风第三次物流',
-      p_Description:'XXXXXXX',
+      p_Description:'XXXXXXX',*/
       credit_Csource:'99'
     },
     text:{
@@ -159,17 +160,69 @@ export default {
              ]
     }
   },
+  mounted: function() {
+    var that = this;
+    let url = 'http://140.143.209.173:8000/api/myinfo/';
+    this.$axios.post(url, {
+      u_Count:this.u_Count
+    })
+    .then(function (res) {
+      console.log(res);
+      that.user.u_PCount = res.data.u_Pcount;
+      that.user.c_Name = res.data.c_Name;
+      that.user.credit_Csource = res.data.credit_CSource;
+      console.log(that.user);
+    })
+    .catch(function (error) {
+      console.log(error);
+    });
+  },
   created(){
       this.list.forEach(item => {
         item.text = this.get(item.n)
       })
     },
  methods: {
-   get(n){
-     // 根据n的值去请求接口获取显示的内容
-  }
+   joinIn(powercode) {
+     var that = this;
+     let url = 'http://140.143.209.173:8000/api/joinproject/';
+     this.$axios.post(url, {
+       u_Count:this.u_Count,
+       u_PowerNum:powercode
+     })
+     .then((res) => {
+       errorCheck(res.data.errorCode.slice());
+     })
+     .catch(function (error) {
+       console.log(error);
+     });
+
+   }
     }
 
+}
+function errorCheck(ans) {
+  console.log(ans);
+  if (ans == "0000") {
+    Message({
+      message: '加入成功',
+      type: 'success'
+    });
+  }
+  else if (ans == "0021") {
+    Message({
+      type:"error",
+      duration: 1500,
+      message: "权限码错误"
+    });
+  }
+  else {
+    Message({
+     showClose: true,
+     message: '加入失败',
+     type: 'error'
+   });
+  }
 }
 
 </script>
