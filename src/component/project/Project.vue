@@ -19,6 +19,7 @@
       <el-input class="about_input" v-model="formObj.u_PowerNum" clearable/>
       </el-form-item>
       <el-form-item v-if="p_inv" label="公司权限码"
+                    :rules="[{required: 'true', message: '不能为空',trigger: 'blur'},{type: 'string', min: 23, max:23, message: '权限码有误'}]"
                     prop="formObj.u_PowerNum">
         <el-input class="about_input" v-model="formObj.u_PowerNum" @change="getPermission" clearable/>
       </el-form-item>
