@@ -5,7 +5,7 @@
       <el-menu-item index="/create">创建项目</el-menu-item>
       <el-menu-item index="/manage">项目管理</el-menu-item>
       <el-menu-item index="/person">个人中心</el-menu-item>
-      <el-menu-item index="/more">更多</el-menu-item>
+      <el-menu-item index="/headpage">更多</el-menu-item>
     </el-menu>
 </template>
 

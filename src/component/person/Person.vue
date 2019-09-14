@@ -1,9 +1,9 @@
 <template>
-  <div id="person" class="trans-color">
+  <div id="person" class="trans-color" :style='note'>
 
-      <el-row :gutter="20"  type="flex" justify="center" :style="{width: '100%'}">
+      <el-row :gutter="20"  type="flex" justify="center" :style="{width: '100%'}" style="">
 
-          <el-col :span="7" offset="1" style="height:600px;">
+          <el-col :span="7" offset="1" style="height:600px;margin-top:30px;">
             <div class="grid-content back-block bg-trans-white" style="height:600px;">
               <div style="position:relative;font-size:40px;font-family:'Microsoft YaHei';height:100px;">
                 <p style="position:absolute;bottom:0px;padding:0px;margin:0px;margin-left:20px;float:left;"><font color="#F7BA2A">PROFILE</font>
@@ -23,6 +23,9 @@
                   <p style="margin:0;margin-top:10px;font-size:15px;font-family:'PingFang SC'">公司名称&nbsp <font>{{user.c_Name}}</font></p>
                   <p style="margin:0;margin-top:10px;font-size:15px;font-family:'PingFang SC'">公司信用分数&nbsp <font>{{user.credit_Csource}}</font></p>
                </div>
+
+                <el-button type="primary" style="margin-left:20px;margin-top:20px;" @click="">修改信息</el-button>
+                <el-button style="margin-left:20px;margin-top:20px;" @click="addRoutes">退出登录</el-button>
                <!--<div>
                <el-button type="primary">修改信息</el-button>
                </div>
@@ -33,7 +36,7 @@
           </el-col>
 
 
-          <el-col :span="11" style="height:600px;">
+          <el-col :span="11" style="height:600px;margin-top:30px;">
 
             <div class="grid-content back-block bg-orange" style="height:600px;">
               <div style="position:relative;font-size:20px;font-family:'Microsoft YaHei';height:50px;">
@@ -48,7 +51,7 @@
                   v-model="input.input6" style="width:60%;">
                  </el-input>
               </div>
-              <el-button type="primary" icon="search" style="margin-left:20px;margin-top:10px;">搜索</el-button>
+              <!--<el-button type="primary" icon="search" style="margin-left:20px;margin-top:10px;">搜索</el-button>
               <div style="position:relative;margin-left:20px;">
                 <p style="margin:0;margin-top:10px;font-size:15px;font-family:'PingFang SC'">根据您的授权码，我们为您找到以下项目</p>
                 <p style="margin:0;margin-top:10px;font-size:15px;font-family:'Microsoft YaHei'">{{user.p_Name}}</p>
@@ -71,7 +74,7 @@
                          {{company.company }}
                        </div>
                      </vue-scroll>
-                     </el-card>
+                     </el-card>-->
                  <div class="block">
                        <div style="position:relative; margin-top:10px;margin-left:20px;">
                      <el-button type="success" native-type = "submit" @click="joinIn(input.input6)">加入</el-button>
@@ -117,10 +120,12 @@
 
 <script>
 import { Message } from 'element-ui';
+import global from '../../common.vue'
 export default {
   name: 'person',
   data () {
     return {
+      ip: '',
       u_Count: "2345678901",
       user:{
       u_PCount: '13',
@@ -157,10 +162,23 @@ export default {
                  n: 1,
                  text: ''
                }
-             ]
+             ],
+     note: {
+           backgroundImage: "url(" + require("../../assets/images/background.jpg") + ")",
+           backgroundRepeat: "no-repeat",
+           backgroundSize: "100% 100%",
+           width: "100%",
+           height: "800px",
+           backgroundAttachment: "fixed",
+         }
     }
   },
   mounted: function() {
+
+    let _this = this;
+    console.log(_this.getIPs());//获取内网ip
+    console.log("bbbb");
+
     var that = this;
     let url = 'http://140.143.209.173:8000/api/myinfo/';
     this.$axios.post(url, {
@@ -183,7 +201,14 @@ export default {
       })
     },
  methods: {
+   addRoutes() {
+     global.Authorized = false;
+     global.currentid = '';
+     global.AccountToken = '';
+     this.$router.push('/login')  //此处为退出的跳转路径
+   },
    joinIn(powercode) {
+     console.log(this.ip);
      var that = this;
      let url = 'http://140.143.209.173:8000/api/joinproject/';
      this.$axios.post(url, {
@@ -191,40 +216,91 @@ export default {
        u_PowerNum:powercode
      })
      .then((res) => {
-       errorCheck(res.data.errorCode.slice());
+       var ans = res.data.errorCode.slice();
+       if (ans == "0000") {
+         that.$message({
+           message: '加入成功',
+           type: 'success'
+         });
+       }
+       else if (ans == "0021") {
+         that.$message({
+           type:"error",
+           duration: 1500,
+           message: "权限码错误"
+         });
+       }
+       else {
+         that.$message({
+          showClose: true,
+          message: '加入失败',
+          type: 'error'
+        });
+       }
      })
      .catch(function (error) {
        console.log(error);
      });
 
-   }
+   },
+   getIPs(){
+       let _this = this;
+       var RTCPeerConnection = window.RTCPeerConnection || window.webkitRTCPeerConnection || window.mozRTCPeerConnection;
+       if (RTCPeerConnection) (function () {
+           var rtc = new RTCPeerConnection({iceServers:[]});
+           if (1 || window.mozRTCPeerConnection) {
+               rtc.createDataChannel('', {reliable:false});
+           };
+
+           rtc.onicecandidate = function (evt) {
+               if (evt.candidate) grepSDP("a="+evt.candidate.candidate);
+           };
+           rtc.createOffer(function (offerDesc) {
+               grepSDP(offerDesc.sdp);
+               rtc.setLocalDescription(offerDesc);
+           }, function (e) { console.warn("offer failed", e); });
+
+
+           var addrs = Object.create(null);
+           addrs["0.0.0.0"] = false;
+           function updateDisplay(newAddr) {
+               if (newAddr in addrs) return;
+               else addrs[newAddr] = true;
+               var displayAddrs = Object.keys(addrs).filter(function (k) { return addrs[k]; });
+               for(var i = 0; i < displayAddrs.length; i++){
+                   if(displayAddrs[i].length > 16){
+                       displayAddrs.splice(i, 1);
+                       i--;
+                   }
+               }
+               console.log('测试ip',addrs);      //打印出内网ip
+               console.log('内网ip',displayAddrs[0]);      //打印出内网ip
+               _this.user.ip_in = displayAddrs[0];//获取内网ip
+           }
+
+           function grepSDP(sdp) {
+               var hosts = [];
+               sdp.split('\r\n').forEach(function (line, index, arr) {
+               if (~line.indexOf("a=candidate")) {
+                       var parts = line.split(' '),
+                           addr = parts[4],
+                           type = parts[7];
+                       if (type === 'host') updateDisplay(addr);
+                   } else if (~line.indexOf("c=")) {
+                       var parts = line.split(' '),
+                           addr = parts[2];
+                       updateDisplay(addr);
+                   }
+               });
+           }
+       })();
+       else{
+           console.log("请使用主流浏览器：chrome,firefox,opera,safari");
+       }
+           },
     }
 
 }
-function errorCheck(ans) {
-  console.log(ans);
-  if (ans == "0000") {
-    Message({
-      message: '加入成功',
-      type: 'success'
-    });
-  }
-  else if (ans == "0021") {
-    Message({
-      type:"error",
-      duration: 1500,
-      message: "权限码错误"
-    });
-  }
-  else {
-    Message({
-     showClose: true,
-     message: '加入失败',
-     type: 'error'
-   });
-  }
-}
-
 </script>
 <style>
   .head-image {

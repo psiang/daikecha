@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <div :style='note'>
-      <navigation></navigation> <br>
+    <div>
+      <navigation></navigation> 
       <router-view></router-view>
     </div>
   </div>

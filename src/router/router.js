@@ -5,6 +5,7 @@ import Message from '../component/message/Message'
 import Manage from '../component/manage/Manage'
 import Person from '../component/person/Person'
 import More from '../component/more/More'
+import Headpage from '../component/headpage/Headpage'
 import Create from '../component/create/Create'
 import imgUpload from '../component/person/imgUpload'
 
@@ -27,6 +28,11 @@ export default new Router({
             path: '/create',
             name: Create,
             component: Create
+        },
+        {
+            path: '/headpage',
+            name: Headpage,
+            component: Headpage
         },
         {
             path: '/manage',

@@ -1,8 +1,8 @@
 <template>
-  <div id="manage">
+  <div id="manage" :style='note'>
     <el-row :gutter="20"  type="flex" justify="center" :style="{width: '100%'}">
-      <el-col class="el-col-radius" :span="3"><div class="grid-content back-block bg-orange"></div></el-col>
-      <el-col class="el-col-radius" :span="15"><div class="grid-content bg-trans-white back-block">
+      <el-col class="el-col-radius" :span="3" style="margin-top:30px;"><div class="grid-content back-block bg-orange"></div></el-col>
+      <el-col class="el-col-radius" :span="15" style="margin-top:30px;"><div class="grid-content bg-trans-white back-block">
         <!--请输入关键字：<input type="text" v-model="keyword" @keyup="sendJsonP(keyword)">
         <ul>
             <li v-for="r in result">{{r}}</li>
@@ -103,6 +103,7 @@
 </template>
 
 <script>
+import global from '../../common.vue'
 export default {
   name: 'manage',
   data () {
@@ -153,39 +154,8 @@ export default {
         }
       },
       projectlist: [
-        /*{ imgsrc: '1', name: '项目A' },
-        { imgsrc: '2', name: '项目B' },
-        { imgsrc: '3', name: '项目C' },
-        { imgsrc: '4', name: '项目D' },
-        { imgsrc: '5', name: '项目E' },
-        { imgsrc: '5', name: '项目F' },
-        { imgsrc: '3', name: '项目G' },
-        { imgsrc: '2', name: '项目H' },
-        { imgsrc: '4', name: '项目I' },
-        { imgsrc: '1', name: '项目J' },
-        { imgsrc: '2', name: '项目K' },
-        { imgsrc: '4', name: '项目L' },
-        { imgsrc: '5', name: '项目M' },
-        { imgsrc: '1', name: '项目N' },
-        { imgsrc: '3', name: '项目O' },
-        { imgsrc: '1', name: '项目A' },
-        { imgsrc: '2', name: '项目B' },
-        { imgsrc: '3', name: '项目C' },
-        { imgsrc: '4', name: '项目D' },
-        { imgsrc: '5', name: '项目E' },
-        { imgsrc: '5', name: '项目F' },
-        { imgsrc: '3', name: '项目G' },
-        { imgsrc: '2', name: '项目H' },
-        { imgsrc: '4', name: '项目I' },
-        { imgsrc: '1', name: '项目J' },
-        { imgsrc: '2', name: '项目K' },
-        { imgsrc: '4', name: '项目L' },
-        { imgsrc: '5', name: '项目M' },
-        { imgsrc: '1', name: '项目N' },
-        { imgsrc: '3', name: '项目O' },*/
       ],
       dialogFormVisible: false,
-      u_Count: "2345678901",
       form: {
         name: '',
         region: '',
@@ -196,19 +166,29 @@ export default {
         resource: '',
         desc: ''
       },
-      formLabelWidth: '120px'
+      formLabelWidth: '120px',
+      u_Count: "2345678901",
+      note: {
+            backgroundImage: "url(" + require("../../assets/images/background.jpg") + ")",
+            backgroundRepeat: "no-repeat",
+            backgroundSize: "100% 100%",
+            width: "100%",
+            height: "800px",
+            backgroundAttachment: "fixed",
+          }
     }
   },
   mounted: function() {
     var that = this;
     let url = 'http://140.143.209.173:8000/api/allprojects/';
+    //that.u_Count = global.currentid;
+    //console.log(global);
     this.$axios.post(url, {
       u_Count:this.u_Count
     })
     .then(function (res) {
       console.log(res);
       that.projectlist = res.data.all_projects;
-      console.log(this.projectlist);
     })
     .catch(function (error) {
       console.log(error);
@@ -255,7 +235,6 @@ export default {
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
     color: #2c3e50;
-    margin-top: 60px;
   }
   .form-input {
     width:50%;
