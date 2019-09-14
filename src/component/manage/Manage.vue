@@ -15,7 +15,7 @@
                 <div class="trans-color block-under-div">
                   <div class="bottom clearfix trans-color">
                     <span class="project-name">{{project.p_Name}}</span>
-                    <el-button type="text" class="button">{{project.p_Statu}}</el-button>
+                    <el-button type="text" class="button">{{statulist[project.p_Num]}}</el-button>
                   </div>
                 </div>
               </el-card>
@@ -155,6 +155,7 @@ export default {
       },
       projectlist: [
       ],
+      statulist:{},
       dialogFormVisible: false,
       form: {
         name: '',
@@ -189,6 +190,17 @@ export default {
     .then(function (res) {
       console.log(res);
       that.projectlist = res.data.all_projects;
+      for (let pro in that.projectlist) {
+        console.log(that.projectlist[pro]);
+        if (that.projectlist[pro].p_Statu == "0") {
+          console.log("aaaaaa");
+          that.statulist[that.projectlist[pro].p_Num] = '未完成';
+        }
+        else {
+          console.log("bbbb");
+          that.statulist[that.projectlist[pro].p_Num] = '已完成';
+        }
+      }
     })
     .catch(function (error) {
       console.log(error);
