@@ -1,128 +1,115 @@
 <template>
   <div id="person" class="trans-color">
-<el-row type="flex" class="row-bg trans-color" justify="space-between" >
 
-  <el-col :span="6" offset="1" >
- <div class="grid-content bg-trans-white back-block">
-    <div class="grid-content bg-white" style="position:relative;left:00px; top:-50px;">
-      <div style="font-size:70px;font-family:'Microsoft YaHei';position:relative;left:25px; top:30px;">
-        <p><font color="#F7BA2A"> PROFILE</font></p>
-      </div>
-      <div style="position:relative;left:280px; top:-30px;">
-      <h2 style="font-size:40px;font-family:'PingFang SC'" >个人信息</h2>
-      </div>
+      <el-row :gutter="20"  type="flex" justify="center" :style="{width: '100%'}">
 
-      <div>
-       <img src="../../assets/logo.png" >
-       </div>
-
-       <div id="person" style="position:relative;left:25px; top:00px;">
-
-         <p style="font-size:20px;font-family:'PingFang SC'">用户账号&nbsp{{user.u_Count}}</p>
-           <p>&nbsp</p>
-             <p>&nbsp</p>
-         <p style="font-size:20px;font-family:'PingFang SC'">{{ user.u_PCount}}个项目</p>
-           <p>&nbsp</p>
-             <p>&nbsp</p>
-       </div>
-
-       <div id="person" style="position:relative;left:25px; top:00px;">
-          <p style="font-size:20px;font-family:'PingFang SC'">用户昵称&nbsp  {{user.u_Nickname}}</p>
-            <p>&nbsp</p>
-              <p>&nbsp</p>
-          <p style="font-size:20px;font-family:'PingFang SC'">公司名称&nbsp {{user.c_Name}}
-          &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-          公司信用分数
-          &nbsp&nbsp&nbsp&nbsp
-          {{user.credit_Csource}}</p>
-       </div>
-       <div>
-       <el-button type="primary">修改信息</el-button>
-       </div>
-       <div style="position:relative;left:300px; top:-40px;">
-        <el-button type="warning">退出账号</el-button>
-        </div>
-        </div>
-
-    </div>
-  </el-col>
-
-  <el-col :span="4"  pull="-2">
-    <div class="grid-content bg-blue" style="position:relative;left:-60px; top:00px;">
-      <div style="position:relative;left:10px; top:20px;">
-      <p style="font-size:20px;font-family:'PingFang SC'">加入新项目&nbsp&nbsp&nbsp&nbsp&nbsp<i class="el-icon-arrow-right"></i></p>
-      <p>&nbsp</p>
-       <p>&nbsp</p>
-       <p>&nbsp</p>
-      <p style="font-size:20px;font-family:'PingFang SC'">
-      问题反馈&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i class="el-icon-arrow-right"></i>
-      <p>&nbsp</p>
-       </div>
-       <div v-for='item in list'>
-            <el-input
-              type="textarea"
-               :rows="24"
-               maxlength=100
-              placeholder="请输入内容"
-              v-model="item.text">
-            </el-input>
-          </div>
-      </p>
-
-      <p><el-button type="success ">提交问题<i class="el-icon-upload el-icon--right"></i></el-button></p>
-        <p>&nbsp</p>
-         <p>&nbsp</p>
-           <p>&nbsp</p>
-            <p>&nbsp</p>
-
-    </div>
-  </el-col>
-
-  <el-col :span="11">
-    <div class="grid-content bg-orange" style="position:relative;left:-30px; top:00px;">
-      <div style="position:relative;left:10px; top:20px;">
-       <p style="font-size:20px;font-family:'PingFang SC'"><font color="#FFFFFF">请输入你的授权码</font></p>
-       <p>&nbsp</p>
-        </div>
-       <div class="demo-input-size">
-         <el-input
-           size="large"
-             placeholder="请输入授权码"
-           v-model="input.input6">
-          </el-input>
-         </div>
-         <el-button type="primary" icon="search">搜索</el-button>
-           <div style="position:relative;left:10px; top:20px;">
-         <p style="font-size:20px;font-family:'PingFang SC'">根据您的授权码，我们为您找到以下项目</p>
-      <div id="person">
-       <p style="font-size:20px;font-family:'Microsoft YaHei'">{{user.p_Name}}</p>
-            <p style="font-size:20px;font-family:'Microsoft YaHei'">{{user.p_Description}}</p>
-      </div>
-       <p style="font-size:20px;font-family:'PingFang SC'">参与的员工</p>
-       </div>
-       <el-card class="box-card">
-         <div v-for="staff in items" :key="staff" class="text item">
-           {{staff.staff }}
-         </div>
-       </el-card>
-        <div style="position:relative;left:10px; top:20px;">
-      <p style="font-size:20px;font-family:'PingFang SC'">参与的公司</p>
-        </div>
-       <el-card class="box-card">
-              <div v-for="company in items1" :key="company" class="text item">
-                {{company.company }}
+          <el-col :span="7" offset="1" style="height:600px;">
+            <div class="grid-content back-block bg-trans-white" style="height:600px;">
+              <div style="position:relative;font-size:40px;font-family:'Microsoft YaHei';height:100px;">
+                <p style="position:absolute;bottom:0px;padding:0px;margin:0px;margin-left:20px;float:left;"><font color="#F7BA2A">PROFILE</font>
+                  <font color="#000000" style="font-size:25px;font-family:'PingFang SC'">个人信息</font></p>
               </div>
-            </el-card>
-        <div class="block">
-            <span class="wrapper">
-              <div style="position:relative;left:750px; top:00px;">
-            <el-button type="success" native-type = "submit">加入</el-button>
+
+               <div style="position:relative;margin-top:30px;">
+                 <img src="../../assets/logo.png" class="head-image" style="float:left;margin-left:20px;margin-right:20px;">
+                 <div style="">
+                   <p style="font-size:15px; margin:0;font-family:'PingFang SC';">用户账号&nbsp{{user.u_Count}}</p>
+                   <p style="font-size:15px; margin:0;font-family:'PingFang SC';color:#5e616d;">{{ user.u_PCount}}个项目</p>
+                 </div>
+               </div>
+
+               <div id="person" style="position:relative;margin-top:30px;margin-left:20px;">
+                  <p style="margin:0;font-size:15px;font-family:'PingFang SC'">用户昵称&nbsp  <font>{{user.u_Nickname}}</font></p>
+                  <p style="margin:0;margin-top:10px;font-size:15px;font-family:'PingFang SC'">公司名称&nbsp <font>{{user.c_Name}}</font></p>
+                  <p style="margin:0;margin-top:10px;font-size:15px;font-family:'PingFang SC'">公司信用分数&nbsp <font>{{user.credit_Csource}}</font></p>
+               </div>
+               <!--<div>
+               <el-button type="primary">修改信息</el-button>
+               </div>
+               <div style="position:relative;left:300px; top:-40px;">
+                <el-button type="warning">退出账号</el-button>
+              </div>-->
+            </div>
+          </el-col>
+
+
+          <el-col :span="11" style="height:600px;">
+
+            <div class="grid-content back-block bg-orange" style="height:600px;">
+              <div style="position:relative;font-size:20px;font-family:'Microsoft YaHei';height:50px;">
+                <p style="position:absolute;bottom:0px;padding:0px;margin:0px;margin-left:20px;float:left;">
+                  <font color="#FFFFFF" style="font-size:20px;font-family:'PingFang SC'">请输入你的授权码</font></p>
               </div>
-              </span>
-        </div>
-    </div>
-  </el-col>
-</el-row>
+
+              <div id="person" style="position:relative;margin-top:10px;margin-left:20px;">
+                <el-input
+                  size="large"
+                    placeholder="请输入授权码"
+                  v-model="input.input6" style="width:60%;">
+                 </el-input>
+              </div>
+              <el-button type="primary" icon="search" style="margin-left:20px;margin-top:10px;">搜索</el-button>
+              <div style="position:relative;margin-left:20px;">
+                <p style="margin:0;margin-top:10px;font-size:15px;font-family:'PingFang SC'">根据您的授权码，我们为您找到以下项目</p>
+                <p style="margin:0;margin-top:10px;font-size:15px;font-family:'Microsoft YaHei'">{{user.p_Name}}</p>
+                <p style="margin:0;margin-top:10px;font-size:15px;font-family:'Microsoft YaHei'">{{user.p_Description}}</p>
+                <p style="margin:0;margin-top:10px;font-size:15px;font-family:'PingFang SC'">参与的员工</p>
+              </div>
+                <el-card class="box-card">
+                  <vue-scroll :ops="ops">
+                  <div v-for="staff in items" :key="staff" class="text item">
+                    {{staff.staff }}
+                  </div>
+                </vue-scroll>
+                </el-card>
+               <div style="position:relative;margin-left:20px;">
+                 <p style="margin:0;margin-top:10px;font-size:15px;font-family:'PingFang SC'">参与的公司</p>
+               </div>
+                <el-card class="box-card">
+                    <vue-scroll :ops="ops">
+                       <div v-for="company in items1" :key="company" class="text item">
+                         {{company.company }}
+                       </div>
+                     </vue-scroll>
+                     </el-card>
+                 <div class="block">
+                       <div style="position:relative; margin-top:10px;margin-left:20px;">
+                     <el-button type="success" native-type = "submit">加入</el-button>
+                       </div>
+                 </div>
+            </div>
+          </el-col>
+
+          <!--<el-col :span="4" class="bg-blue" style="height:600px;">
+              <div style="position:relative;">
+                  <p style="font-size:20px;font-family:'PingFang SC'">加入新项目&nbsp&nbsp&nbsp&nbsp&nbsp<i class="el-icon-arrow-right"></i></p>
+                  <p>&nbsp</p>
+                   <p>&nbsp</p>
+                   <p>&nbsp</p>
+                  <p style="font-size:20px;font-family:'PingFang SC'">
+                  问题反馈&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i class="el-icon-arrow-right"></i>
+                  <p>&nbsp</p>
+              </div>
+               <div v-for='item in list'>
+                    <el-input
+                      type="textarea"
+                       :rows="24"
+                       maxlength=100
+                      placeholder="请输入内容"
+                      v-model="item.text">
+                    </el-input>
+                  </div>
+              </p>
+
+              <p><el-button type="success ">提交问题<i class="el-icon-upload el-icon--right"></i></el-button></p>
+                <p>&nbsp</p>
+                 <p>&nbsp</p>
+                   <p>&nbsp</p>
+                    <p>&nbsp</p>
+
+          </el-col>-->
+
+      </el-row>
 
   </div>
 
@@ -187,6 +174,10 @@ export default {
 
 </script>
 <style>
+  .head-image {
+    height: 50px;
+    width: auto;
+  }
   .trans-color {
     background: rgba(0, 0, 0, 0);
     border-color: rgba(0, 0, 0, 0);
@@ -231,10 +222,13 @@ export default {
     }
 
     .item {
-      padding: 18px 0;
+      padding: 2px 0;
+      height: 10px;
     }
 
     .box-card {
-      width: 480px;
+      width: 70%;
+      margin-left: 20px;
+      height: 100px;
     }
 </style>

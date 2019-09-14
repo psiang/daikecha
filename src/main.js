@@ -5,6 +5,10 @@ import 'element-ui/lib/theme-chalk/index.css'
 import router from './router/router.js'  //引入路由规则
 import vuescroll from 'vuescroll';
 import VueResource from 'vue-resource'
+import axios from 'axios';
+
+
+Vue.prototype.$axios = axios;
 
 Vue.use(VueResource);
 Vue.use(ElementUI);
