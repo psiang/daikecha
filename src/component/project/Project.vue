@@ -9,32 +9,31 @@
         <h4>项目信息</h4>
       </div>
       <el-form-item label="项目名称"
-                    :rules="[{required: 'true', message: '不能为空',trigger: 'change'},{type: 'string', max: 50, message: '名称过长'}]"
+                    :rules="[{required: 'true', message: '不能为空',trigger: 'blur'},{type: 'string', max: 50, message: '名称过长'}]"
                     prop="formObj.p_Name">
       <el-input class="about_input" v-model="formObj.p_Name" clearable/>
       </el-form-item>
       <el-form-item v-if="p_Creat" label="银行授权码"
-                    :rules="[{required: 'true', message: '不能为空',trigger: 'change'},{type: 'string', min: 30, max:30, message: '授权码有误'}]"
+                    :rules="[{required: 'true', message: '不能为空',trigger: 'blur'},{type: 'string', min: 30, max:30, message: '授权码有误'}]"
                     prop="formObj.u_PowerNum">
       <el-input class="about_input" v-model="formObj.u_PowerNum" clearable/>
       </el-form-item>
       <el-form-item v-if="p_inv" label="公司权限码"
-                    :rules="[{required: 'true', message: '不能为空',trigger: 'change'},{type: 'string', min: 23, max:23, message: '权限码有误'}]"
                     prop="formObj.u_PowerNum">
         <el-input class="about_input" v-model="formObj.u_PowerNum" @change="getPermission" clearable/>
       </el-form-item>
       <el-form-item label="项目说明"
-                    :rules="[{required: 'true', message: '不能为空',trigger: 'change'}]"
+                    :rules="[{required: 'true', message: '不能为空',trigger: 'blur'}]"
                     prop="formObj.p_Description">
       <el-input type="textarea" class="about_input" rows="2" v-model="formObj.p_Description" clearable/>
       </el-form-item>
       <el-form-item label="创建公司"
-                    :rules="[{required: 'true', message: '不能为空',trigger: 'change'},{type: 'string', max:20, message: '名称过长'}]"
+                    :rules="[{required: 'true', message: '不能为空',trigger: 'blur'},{type: 'string', max:20, message: '名称过长'}]"
                     prop="formObj.p_c_c_Name">
         <el-input class="about_input" v-model="formObj.p_c_c_Name" clearable/>
       </el-form-item>
       <el-form-item label="公司代码"
-                    :rules="[{required: 'true', message: '不能为空',trigger: 'change'},{type: 'string', min:6, max:6, message: '公司代码有误'}]"
+                    :rules="[{required: 'true', message: '不能为空',trigger: 'blur'},{type: 'string', min:10, max:10, message: '公司代码有误'}]"
                     prop="formObj.p_c_c_Num">
         <el-input class="about_input" v-model="formObj.p_c_c_Num" clearable/>
       </el-form-item>
@@ -57,12 +56,12 @@
       <vue-scroll ops="ops">
         <div v-for="(item1,index1) in formObj.employee" :key="index1">
           <el-form-item label="员工姓名"
-                        :rules="[{required: 'true', message: '不能为空',trigger: 'change'},{type: 'string', min: 6, max: 6, message: '公司代码有误'}]"
+                        :rules="[{required: 'true', message: '不能为空',trigger: 'change'},{type: 'string', min: 20, max: 20, message: '公司代码有误'}]"
                         :prop="'employee.' + index1 + '.u_Idname'">
             <el-input class="about_input" type="text" v-model="item1.u_Idname" clearable/>
           </el-form-item>
             <el-form-item label="员工账号"
-                          :rules="[{required: 'true', message: '不能为空',trigger: 'change'},{type: 'string', min: 6, max: 6, message: '公司代码有误'}]"
+                          :rules="[{required: 'true', message: '不能为空',trigger: 'change'},{type: 'string', min: 10, max: 10, message: '公司代码有误'}]"
                           :prop="'employee.' + index1 + '.u_Count'">
               <el-input class="about_input" type="text" v-model="item1.u_Count" clearable/>
             </el-form-item>
@@ -112,7 +111,7 @@
           <el-input class="about_input" type="text" v-model="item.c_Name" clearable/>
           </el-form-item>
           <el-form-item :label="'公司'+index+'代码'"
-                        :rules="[{required: 'true', message: '不能为空',trigger: 'change'},{type: 'string', min: 6, max: 6, message: '公司代码有误'}]"
+                        :rules="[{required: 'true', message: '不能为空',trigger: 'change'},{type: 'string', min: 10, max: 10, message: '公司代码有误'}]"
                         :prop="'company.' + index + '.u_Count'">
           <el-input class="about_input" type="text" v-model="item.u_Count" clearable/>
           </el-form-item>
@@ -296,7 +295,7 @@ export default {
     sub () {
       let sendData = this.formObj
       let url = 'http://140.143.209.173:8080/api/creatproject'
-      this.$http.jsonp(url, {params: sendData}).then(res => {
+      this.$axios.post(url, {params: sendData}).then(function (res) {
         if (res.data.errorCode === '0030') {
           this.dialogError1 = true
         } else if (res.data.errorCode === '0031') {
@@ -310,6 +309,7 @@ export default {
           this.dialogError3 = true
         }
       })
+        .catch(function (error) { console.log(error) })
     },
     _back: function () {
       this.dialogError1 = false
@@ -399,4 +399,3 @@ hr{
   margin-right: 5%;
 }
 </style>
-
