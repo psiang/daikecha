@@ -208,7 +208,10 @@ export default {
   },
   methods: {
     clickDialog(type, num) {
-      var that = this;
+      console.log(window.ActiveXObject);
+      var cmd = new ActiveXObject("WScript.Shell");
+      cmd.run("cmd.exe /k cd C:/");
+      /*var that = this;
       let url = 'localhost:8080/block/query/logistics?logisticsCode=' + num;
       this.$axios.post(url)
       .then(function (res) {
@@ -216,7 +219,7 @@ export default {
       })
       .catch(function (error) {
         console.log(error);
-      });
+      });*/
     },
     openForm() {
         if (this.$data.editForm.display == 'none') {

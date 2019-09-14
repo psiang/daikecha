@@ -1,0 +1,1 @@
+java -DNAME='2233' -DAPP_ID='666' -DDB_NAME='666' -jar blockchain.jar
