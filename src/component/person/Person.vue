@@ -24,7 +24,7 @@
                   <p style="margin:0;margin-top:10px;font-size:15px;font-family:'PingFang SC'">公司信用分数&nbsp <font>{{user.credit_Csource}}</font></p>
                </div>
 
-                <el-button type="primary" style="margin-left:20px;margin-top:20px;" @click="">修改信息</el-button>
+                <el-button type="primary" style="margin-left:20px;margin-top:20px;" @click="modifyInfo">修改信息</el-button>
                 <el-button style="margin-left:20px;margin-top:20px;" @click="addRoutes">退出登录</el-button>
                <!--<div>
                <el-button type="primary">修改信息</el-button>
@@ -51,6 +51,20 @@
                   v-model="input.input6" style="width:60%;">
                  </el-input>
               </div>
+
+
+                <div style="position:relative;font-size:20px;font-family:'Microsoft YaHei';height:50px;">
+                  <p style="position:absolute;bottom:0px;padding:0px;margin:0px;margin-left:20px;float:left;">
+                    <font color="#FFFFFF" style="font-size:20px;font-family:'PingFang SC'">请输入你的本机IP</font></p>
+                </div>
+
+                <div id="person" style="position:relative;margin-top:10px;margin-left:20px;">
+                  <el-input
+                    size="large"
+                      placeholder="请输入本机IP"
+                    v-model="input.input7" style="width:60%;">
+                   </el-input>
+                </div>
               <!--<el-button type="primary" icon="search" style="margin-left:20px;margin-top:10px;">搜索</el-button>
               <div style="position:relative;margin-left:20px;">
                 <p style="margin:0;margin-top:10px;font-size:15px;font-family:'PingFang SC'">根据您的授权码，我们为您找到以下项目</p>
@@ -77,7 +91,7 @@
                      </el-card>-->
                  <div class="block">
                        <div style="position:relative; margin-top:10px;margin-left:20px;">
-                     <el-button type="success" native-type = "submit" @click="joinIn(input.input6)">加入</el-button>
+                     <el-button type="success" native-type = "submit" @click="joinIn(input.input6, input.input7)">加入</el-button>
                        </div>
                  </div>
             </div>
@@ -201,19 +215,29 @@ export default {
       })
     },
  methods: {
+   modifyInfo() { //修改
+     var that = this;
+     if (that.user.u_PCount == -1) {
+       //公司修改
+     }
+     else {
+       //个人修改
+     }
+   },
    addRoutes() {
      global.Authorized = false;
      global.currentid = '';
      global.AccountToken = '';
      this.$router.push('/login')  //此处为退出的跳转路径
    },
-   joinIn(powercode) {
+   joinIn(powercode, myip) {
      console.log(this.ip);
      var that = this;
      let url = 'http://140.143.209.173:8000/api/joinproject/';
      this.$axios.post(url, {
        u_Count:this.u_Count,
-       u_PowerNum:powercode
+       u_PowerNum:powercode,
+       ip: myip
      })
      .then((res) => {
        var ans = res.data.errorCode.slice();
