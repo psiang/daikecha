@@ -140,7 +140,7 @@ export default {
   data () {
     return {
       ip: '',
-      u_Count: "2345678901",
+      u_Count: "2017301500",
       user:{
       u_PCount: '13',
       c_Name: 'AA',
@@ -190,9 +190,9 @@ export default {
   mounted: function() {
 
     let _this = this;
+    that.u_Count = global.currentid;
     console.log(_this.getIPs());//获取内网ip
     console.log("bbbb");
-
     var that = this;
     let url = 'http://140.143.209.173:8000/api/myinfo/';
     this.$axios.post(url, {
@@ -200,10 +200,12 @@ export default {
     })
     .then(function (res) {
       console.log(res);
-      that.user.u_PCount = res.data.u_Pcount;
-      that.user.c_Name = res.data.c_Name;
-      that.user.credit_Csource = res.data.credit_CSource;
-      console.log(that.user);
+      if (that.errorCheck(res.data.errorCode.slice(), that)) {
+        that.user.u_PCount = res.data.u_Pcount;
+        that.user.c_Name = res.data.c_Name;
+        that.user.credit_Csource = res.data.credit_CSource;
+        console.log(that.user);
+      }
     })
     .catch(function (error) {
       console.log(error);
@@ -215,6 +217,103 @@ export default {
       })
     },
  methods: {
+   errorCheck(ans, that) {
+     if (ans == "0021") {
+       that.$message({
+         type:"error",
+         duration: 1500,
+         message: "权限码错误"
+       });
+     }
+     else if (ans == "0001") {
+       that.$message({
+         type:"error",
+         duration: 1500,
+         message: "账号已存在"
+       });
+     }
+     else if (ans == "0002") {
+       that.$message({
+         type:"error",
+         duration: 1500,
+         message: "账号或密码错误"
+       });
+     }
+     else if (ans == "0003") {
+       that.$message({
+         type:"error",
+         duration: 1500,
+         message: "账号或身份证号错误"
+       });
+     }
+     else if (ans == "0004") {
+       that.$message({
+         type:"error",
+         duration: 1500,
+         message: "公司账号错误"
+       });
+     }
+     else if (ans == "0010") {
+       that.$message({
+         type:"error",
+         duration: 1500,
+         message: "项目信息显示失败"
+       });
+     }
+     else if (ans == "0020") {
+       that.$message({
+         type:"error",
+         duration: 1500,
+         message: "用户信息获取失败"
+       });
+     }
+     else if (ans == "0022") {
+       that.$message({
+         type:"error",
+         duration: 1500,
+         message: "加入项目失败"
+       });
+     }
+     else if (ans == "0023") {
+       that.$message({
+         type:"error",
+         duration: 1500,
+         message: "修改个人信息失败"
+       });
+     }
+     else if (ans == "0030") {
+       that.$message({
+         type:"error",
+         duration: 1500,
+         message: "创建项目失败"
+       });
+     }
+     else if (ans == "0031") {
+       that.$message({
+         type:"error",
+         duration: 1500,
+         message: "银行授权码错误"
+       });
+     }
+     else if (ans == "0032") {
+       that.$message({
+         type:"error",
+         duration: 1500,
+         message: "用户不存在"
+       });
+     }
+     else if (ans == "0040") {
+       that.$message({
+         type:"error",
+         duration: 1500,
+         message: "更新信息失败"
+       });
+     }
+     else {
+       return 1;
+     }
+     return 0;
+   },
    modifyInfo() { //修改
      var that = this;
      if (that.user.u_PCount == -1) {
@@ -240,26 +339,11 @@ export default {
        ip: myip
      })
      .then((res) => {
-       var ans = res.data.errorCode.slice();
-       if (ans == "0000") {
+       if (that.errorCheck(res.data.errorCode.slice(), that)) {
          that.$message({
-           message: '加入成功',
+           message: '操作成功',
            type: 'success'
          });
-       }
-       else if (ans == "0021") {
-         that.$message({
-           type:"error",
-           duration: 1500,
-           message: "权限码错误"
-         });
-       }
-       else {
-         that.$message({
-          showClose: true,
-          message: '加入失败',
-          type: 'error'
-        });
        }
      })
      .catch(function (error) {

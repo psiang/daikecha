@@ -1,0 +1,1556 @@
+5361525 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:21, received:(0p)(0b), handled:0, sent:(6p)(4682b)
+5361620 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:21, received:(0p)(0b), handled:0, sent:(6p)(4682b)
+5391544 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:21, received:(0p)(0b), handled:0, sent:(6p)(4682b)
+5391627 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:21, received:(0p)(0b), handled:0, sent:(6p)(4682b)
+5417517 [tio-timer-checkheartbeat-2] INFO  org.tio.server.ServerGroupContext - 
+null
+ ├ 当前时间:1568563283936
+ ├ 连接统计
+ │ 	 ├ 共接受过连接数  :22
+ │ 	 ├ 当前连接数            :1
+ │ 	 ├ 异IP连接数           :1
+ │ 	 └ 关闭过的连接数  :21
+ ├ 消息统计
+ │ 	 ├ 已处理消息  :6
+ │ 	 ├ 已接收消息(packet/byte):6/4682
+ │ 	 ├ 已发送消息(packet/byte):0/0b
+ │ 	 ├ 平均每次TCP包接收的字节数  :780.3333333333334
+ │ 	 └ 平均每次TCP包接收的业务包  :1.0
+ └ IP统计时段 
+   	 └ []
+ ├ 节点统计
+ │ 	 ├ clientNodes :1
+ │ 	 ├ 所有连接               :1
+ │ 	 ├ 活动连接               :1
+ │ 	 ├ 关闭次数               :0
+ │ 	 ├ 绑定user数         :0
+ │ 	 ├ 绑定token数       :0
+ │ 	 └ 等待同步消息响应 :0
+ ├ 群组
+ │ 	 ├ channelmap  :0
+ │ 	 └ groupmap:0
+ └ 拉黑IP 
+   	 └ []
+5417525 [tio-timer-checkheartbeat-2] INFO  org.tio.server.ServerGroupContext - null, 检查心跳, 共1个连接, 取锁耗时0ms, 循环耗时10ms, 心跳超时时间:120000ms
+5421021 [pool-2-thread-1] INFO  c.m.b.socket.client.ClientStarter - 本机IP：192.168.43.130
+5421128 [pool-2-thread-1] INFO  c.m.b.socket.client.ClientStarter - 共有4个成员需要连接：[Member{appId='kfbiC', name='2017301500', ip='192.168.43.130'}, Member{appId='kfbiC', name='2017301500', ip='192.168.41.130'}, Member{appId='kfbiC', name='2017301500', ip='192.168.41.130'}, Member{appId='kfbiC', name='2017301500', ip='192.168.41.130'}]
+5421544 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:21, received:(0p)(0b), handled:0, sent:(6p)(4682b)
+5421627 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:21, received:(0p)(0b), handled:0, sent:(6p)(4682b)
+5451544 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:21, received:(0p)(0b), handled:0, sent:(6p)(4682b)
+5451628 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:21, received:(0p)(0b), handled:0, sent:(6p)(4682b)
+5481545 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:21, received:(0p)(0b), handled:0, sent:(6p)(4682b)
+5481629 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:21, received:(0p)(0b), handled:0, sent:(6p)(4682b)
+5511546 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:21, received:(0p)(0b), handled:0, sent:(6p)(4682b)
+5511630 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:21, received:(0p)(0b), handled:0, sent:(6p)(4682b)
+5537525 [tio-timer-checkheartbeat-2] INFO  org.tio.server.ServerGroupContext - 192.168.43.130:65372, 235011 ms没有收发消息
+5537526 [tio-timer-checkheartbeat-2] INFO  org.tio.server.ServerGroupContext - 
+null
+ ├ 当前时间:1568563403944
+ ├ 连接统计
+ │ 	 ├ 共接受过连接数  :22
+ │ 	 ├ 当前连接数            :1
+ │ 	 ├ 异IP连接数           :1
+ │ 	 └ 关闭过的连接数  :21
+ ├ 消息统计
+ │ 	 ├ 已处理消息  :6
+ │ 	 ├ 已接收消息(packet/byte):6/4682
+ │ 	 ├ 已发送消息(packet/byte):0/0b
+ │ 	 ├ 平均每次TCP包接收的字节数  :780.3333333333334
+ │ 	 └ 平均每次TCP包接收的业务包  :1.0
+ └ IP统计时段 
+   	 └ []
+ ├ 节点统计
+ │ 	 ├ clientNodes :1
+ │ 	 ├ 所有连接               :1
+ │ 	 ├ 活动连接               :1
+ │ 	 ├ 关闭次数               :0
+ │ 	 ├ 绑定user数         :0
+ │ 	 ├ 绑定token数       :0
+ │ 	 └ 等待同步消息响应 :0
+ ├ 群组
+ │ 	 ├ channelmap  :0
+ │ 	 └ groupmap:0
+ └ 拉黑IP 
+   	 └ []
+5537527 [tio-49] INFO  org.tio.core.CloseRunnable - org.tio.server.ServerGroupContext@599d4691, 192.168.43.130:65372 准备关闭连接, isNeedRemove:true, 235011 ms没有收发消息
+5537528 [tio-50] INFO  c.m.b.s.c.BlockClientAioListener - 连接关闭：server地址为-192.168.43.130:6789
+5537535 [tio-timer-checkheartbeat-2] INFO  org.tio.server.ServerGroupContext - null, 检查心跳, 共1个连接, 取锁耗时0ms, 循环耗时9ms, 心跳超时时间:120000ms
+5537535 [tio-49] INFO  org.tio.core.ChannelContext - 关闭前192.168.43.130:65372, 关闭后$UNKNOWN:44
+5537535 [tio-50] INFO  org.tio.core.CloseRunnable - org.tio.client.ClientGroupContext@2cc3ad05, 0:0:0:0:0:0:0:0:65372 准备关闭连接, isNeedRemove:false, 读数据时发生异常
+5537536 [tio-50] INFO  org.tio.core.ChannelContext - 关闭前0:0:0:0:0:0:0:0:65372, 关闭后$UNKNOWN:45
+5541546 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:0, closed:22, received:(0p)(0b), handled:0, sent:(6p)(4682b)
+5541631 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:0, closed:22, received:(0p)(0b), handled:0, sent:(6p)(4682b)
+5542540 [tio-group-123] INFO  o.t.c.ConnectionCompletionHandler - connected to 192.168.43.130:6789
+5542540 [tio-group-124] INFO  c.m.b.s.s.BlockServerAioListener - onAfterConnected channelContext:192.168.43.130:49212, isConnected:true, isReconnect:false
+5542540 [tio-client-reconn-3] INFO  org.tio.client.AioClient - 0:0:0:0:0:0:0:0:49212,重连耗时:0 ms
+5542540 [tio-group-123] INFO  c.m.b.socket.client.ClientStarter - 连接192.168.43.130:6789成功
+5571546 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:22, received:(0p)(0b), handled:0, sent:(6p)(4682b)
+5571631 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:22, received:(0p)(0b), handled:0, sent:(6p)(4682b)
+5601547 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:22, received:(0p)(0b), handled:0, sent:(6p)(4682b)
+5601631 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:22, received:(0p)(0b), handled:0, sent:(6p)(4682b)
+5631548 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:22, received:(0p)(0b), handled:0, sent:(6p)(4682b)
+5631633 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:22, received:(0p)(0b), handled:0, sent:(6p)(4682b)
+5657536 [tio-timer-checkheartbeat-2] INFO  org.tio.server.ServerGroupContext - 
+null
+ ├ 当前时间:1568563523955
+ ├ 连接统计
+ │ 	 ├ 共接受过连接数  :23
+ │ 	 ├ 当前连接数            :1
+ │ 	 ├ 异IP连接数           :1
+ │ 	 └ 关闭过的连接数  :22
+ ├ 消息统计
+ │ 	 ├ 已处理消息  :6
+ │ 	 ├ 已接收消息(packet/byte):6/4682
+ │ 	 ├ 已发送消息(packet/byte):0/0b
+ │ 	 ├ 平均每次TCP包接收的字节数  :780.3333333333334
+ │ 	 └ 平均每次TCP包接收的业务包  :1.0
+ └ IP统计时段 
+   	 └ []
+ ├ 节点统计
+ │ 	 ├ clientNodes :1
+ │ 	 ├ 所有连接               :1
+ │ 	 ├ 活动连接               :1
+ │ 	 ├ 关闭次数               :0
+ │ 	 ├ 绑定user数         :0
+ │ 	 ├ 绑定token数       :0
+ │ 	 └ 等待同步消息响应 :0
+ ├ 群组
+ │ 	 ├ channelmap  :0
+ │ 	 └ groupmap:0
+ └ 拉黑IP 
+   	 └ []
+5657544 [tio-timer-checkheartbeat-2] INFO  org.tio.server.ServerGroupContext - null, 检查心跳, 共1个连接, 取锁耗时0ms, 循环耗时10ms, 心跳超时时间:120000ms
+5661549 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:22, received:(0p)(0b), handled:0, sent:(6p)(4682b)
+5661641 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:22, received:(0p)(0b), handled:0, sent:(6p)(4682b)
+5691550 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:22, received:(0p)(0b), handled:0, sent:(6p)(4682b)
+5691642 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:22, received:(0p)(0b), handled:0, sent:(6p)(4682b)
+5721048 [pool-2-thread-1] INFO  c.m.b.socket.client.ClientStarter - 本机IP：192.168.43.130
+5721272 [pool-2-thread-1] INFO  c.m.b.socket.client.ClientStarter - 共有4个成员需要连接：[Member{appId='kfbiC', name='2017301500', ip='192.168.43.130'}, Member{appId='kfbiC', name='2017301500', ip='192.168.41.130'}, Member{appId='kfbiC', name='2017301500', ip='192.168.41.130'}, Member{appId='kfbiC', name='2017301500', ip='192.168.41.130'}]
+5721550 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:22, received:(0p)(0b), handled:0, sent:(6p)(4682b)
+5721643 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:22, received:(0p)(0b), handled:0, sent:(6p)(4682b)
+5751551 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:22, received:(0p)(0b), handled:0, sent:(6p)(4682b)
+5751644 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:22, received:(0p)(0b), handled:0, sent:(6p)(4682b)
+5777545 [tio-timer-checkheartbeat-2] INFO  org.tio.server.ServerGroupContext - 192.168.43.130:49212, 235011 ms没有收发消息
+5777545 [tio-timer-checkheartbeat-2] INFO  org.tio.server.ServerGroupContext - 
+null
+ ├ 当前时间:1568563643964
+ ├ 连接统计
+ │ 	 ├ 共接受过连接数  :23
+ │ 	 ├ 当前连接数            :1
+ │ 	 ├ 异IP连接数           :1
+ │ 	 └ 关闭过的连接数  :22
+ ├ 消息统计
+ │ 	 ├ 已处理消息  :6
+ │ 	 ├ 已接收消息(packet/byte):6/4682
+ │ 	 ├ 已发送消息(packet/byte):0/0b
+ │ 	 ├ 平均每次TCP包接收的字节数  :780.3333333333334
+ │ 	 └ 平均每次TCP包接收的业务包  :1.0
+ └ IP统计时段 
+   	 └ []
+ ├ 节点统计
+ │ 	 ├ clientNodes :1
+ │ 	 ├ 所有连接               :1
+ │ 	 ├ 活动连接               :1
+ │ 	 ├ 关闭次数               :0
+ │ 	 ├ 绑定user数         :0
+ │ 	 ├ 绑定token数       :0
+ │ 	 └ 等待同步消息响应 :0
+ ├ 群组
+ │ 	 ├ channelmap  :0
+ │ 	 └ groupmap:0
+ └ 拉黑IP 
+   	 └ []
+5777547 [tio-51] INFO  org.tio.core.CloseRunnable - org.tio.server.ServerGroupContext@599d4691, 192.168.43.130:49212 准备关闭连接, isNeedRemove:true, 235011 ms没有收发消息
+5777547 [tio-52] INFO  c.m.b.s.c.BlockClientAioListener - 连接关闭：server地址为-192.168.43.130:6789
+5777554 [tio-52] INFO  org.tio.core.CloseRunnable - org.tio.client.ClientGroupContext@2cc3ad05, 0:0:0:0:0:0:0:0:49212 准备关闭连接, isNeedRemove:false, 读数据时发生异常
+5777553 [tio-timer-checkheartbeat-2] INFO  org.tio.server.ServerGroupContext - null, 检查心跳, 共1个连接, 取锁耗时0ms, 循环耗时10ms, 心跳超时时间:120000ms
+5777554 [tio-51] INFO  org.tio.core.ChannelContext - 关闭前192.168.43.130:49212, 关闭后$UNKNOWN:46
+5777555 [tio-52] INFO  org.tio.core.ChannelContext - 关闭前0:0:0:0:0:0:0:0:49212, 关闭后$UNKNOWN:47
+5781552 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:0, closed:23, received:(0p)(0b), handled:0, sent:(6p)(4682b)
+5781644 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:0, closed:23, received:(0p)(0b), handled:0, sent:(6p)(4682b)
+5782563 [tio-group-127] INFO  c.m.b.s.s.BlockServerAioListener - onAfterConnected channelContext:192.168.43.130:49347, isConnected:true, isReconnect:false
+5782564 [tio-group-128] INFO  o.t.c.ConnectionCompletionHandler - connected to 192.168.43.130:6789
+5782567 [tio-group-128] INFO  c.m.b.socket.client.ClientStarter - 连接192.168.43.130:6789成功
+5782568 [tio-client-reconn-4] INFO  org.tio.client.AioClient - 0:0:0:0:0:0:0:0:49347,重连耗时:11 ms
+5811553 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:23, received:(0p)(0b), handled:0, sent:(6p)(4682b)
+5811645 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:23, received:(0p)(0b), handled:0, sent:(6p)(4682b)
+5841554 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:23, received:(0p)(0b), handled:0, sent:(6p)(4682b)
+5841646 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:23, received:(0p)(0b), handled:0, sent:(6p)(4682b)
+5871555 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:23, received:(0p)(0b), handled:0, sent:(6p)(4682b)
+5871647 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:23, received:(0p)(0b), handled:0, sent:(6p)(4682b)
+5897556 [tio-timer-checkheartbeat-2] INFO  org.tio.server.ServerGroupContext - 
+null
+ ├ 当前时间:1568563763975
+ ├ 连接统计
+ │ 	 ├ 共接受过连接数  :24
+ │ 	 ├ 当前连接数            :1
+ │ 	 ├ 异IP连接数           :1
+ │ 	 └ 关闭过的连接数  :23
+ ├ 消息统计
+ │ 	 ├ 已处理消息  :6
+ │ 	 ├ 已接收消息(packet/byte):6/4682
+ │ 	 ├ 已发送消息(packet/byte):0/0b
+ │ 	 ├ 平均每次TCP包接收的字节数  :780.3333333333334
+ │ 	 └ 平均每次TCP包接收的业务包  :1.0
+ └ IP统计时段 
+   	 └ []
+ ├ 节点统计
+ │ 	 ├ clientNodes :1
+ │ 	 ├ 所有连接               :1
+ │ 	 ├ 活动连接               :1
+ │ 	 ├ 关闭次数               :0
+ │ 	 ├ 绑定user数         :0
+ │ 	 ├ 绑定token数       :0
+ │ 	 └ 等待同步消息响应 :0
+ ├ 群组
+ │ 	 ├ channelmap  :0
+ │ 	 └ groupmap:0
+ └ 拉黑IP 
+   	 └ []
+5897557 [tio-timer-checkheartbeat-2] INFO  org.tio.server.ServerGroupContext - null, 检查心跳, 共1个连接, 取锁耗时0ms, 循环耗时0ms, 心跳超时时间:120000ms
+5901556 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:23, received:(0p)(0b), handled:0, sent:(6p)(4682b)
+5901648 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:23, received:(0p)(0b), handled:0, sent:(6p)(4682b)
+5931557 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:23, received:(0p)(0b), handled:0, sent:(6p)(4682b)
+5931649 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:23, received:(0p)(0b), handled:0, sent:(6p)(4682b)
+5961558 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:23, received:(0p)(0b), handled:0, sent:(6p)(4682b)
+5961650 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:23, received:(0p)(0b), handled:0, sent:(6p)(4682b)
+5991558 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:23, received:(0p)(0b), handled:0, sent:(6p)(4682b)
+5991652 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:23, received:(0p)(0b), handled:0, sent:(6p)(4682b)
+6017585 [tio-timer-checkheartbeat-2] INFO  org.tio.server.ServerGroupContext - 192.168.43.130:49347, 235023 ms没有收发消息
+6017686 [tio-54] INFO  c.m.b.s.c.BlockClientAioListener - 连接关闭：server地址为-192.168.43.130:6789
+6017690 [tio-54] INFO  org.tio.core.CloseRunnable - org.tio.client.ClientGroupContext@2cc3ad05, 0:0:0:0:0:0:0:0:49347 准备关闭连接, isNeedRemove:false, 读数据时发生异常
+6017691 [tio-54] INFO  org.tio.core.ChannelContext - 关闭前0:0:0:0:0:0:0:0:49347, 关闭后$UNKNOWN:48
+6017698 [tio-53] INFO  org.tio.core.CloseRunnable - org.tio.server.ServerGroupContext@599d4691, 192.168.43.130:49347 准备关闭连接, isNeedRemove:true, 235023 ms没有收发消息
+6017701 [tio-53] INFO  org.tio.core.ChannelContext - 关闭前192.168.43.130:49347, 关闭后$UNKNOWN:49
+6017707 [tio-timer-checkheartbeat-2] INFO  org.tio.server.ServerGroupContext - 
+null
+ ├ 当前时间:1568563884075
+ ├ 连接统计
+ │ 	 ├ 共接受过连接数  :24
+ │ 	 ├ 当前连接数            :1
+ │ 	 ├ 异IP连接数           :1
+ │ 	 └ 关闭过的连接数  :23
+ ├ 消息统计
+ │ 	 ├ 已处理消息  :6
+ │ 	 ├ 已接收消息(packet/byte):6/4682
+ │ 	 ├ 已发送消息(packet/byte):0/0b
+ │ 	 ├ 平均每次TCP包接收的字节数  :780.3333333333334
+ │ 	 └ 平均每次TCP包接收的业务包  :1.0
+ └ IP统计时段 
+   	 └ []
+ ├ 节点统计
+ │ 	 ├ clientNodes :0
+ │ 	 ├ 所有连接               :0
+ │ 	 ├ 活动连接               :0
+ │ 	 ├ 关闭次数               :0
+ │ 	 ├ 绑定user数         :0
+ │ 	 ├ 绑定token数       :0
+ │ 	 └ 等待同步消息响应 :0
+ ├ 群组
+ │ 	 ├ channelmap  :0
+ │ 	 └ groupmap:0
+ └ 拉黑IP 
+   	 └ []
+6017709 [tio-timer-checkheartbeat-2] INFO  org.tio.server.ServerGroupContext - null, 检查心跳, 共1个连接, 取锁耗时0ms, 循环耗时117ms, 心跳超时时间:120000ms
+6021568 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:0, closed:24, received:(0p)(0b), handled:0, sent:(6p)(4682b)
+6021662 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:0, closed:24, received:(0p)(0b), handled:0, sent:(6p)(4682b)
+6021766 [pool-2-thread-1] INFO  c.m.b.socket.client.ClientStarter - 本机IP：192.168.43.130
+6021911 [pool-2-thread-1] INFO  c.m.b.socket.client.ClientStarter - 共有4个成员需要连接：[Member{appId='kfbiC', name='2017301500', ip='192.168.43.130'}, Member{appId='kfbiC', name='2017301500', ip='192.168.41.130'}, Member{appId='kfbiC', name='2017301500', ip='192.168.41.130'}, Member{appId='kfbiC', name='2017301500', ip='192.168.41.130'}]
+6022711 [tio-group-132] INFO  c.m.b.s.s.BlockServerAioListener - onAfterConnected channelContext:192.168.43.130:49550, isConnected:true, isReconnect:false
+6022716 [tio-group-131] INFO  o.t.c.ConnectionCompletionHandler - connected to 192.168.43.130:6789
+6022721 [tio-group-131] INFO  c.m.b.socket.client.ClientStarter - 连接192.168.43.130:6789成功
+6022722 [tio-client-reconn-1] INFO  org.tio.client.AioClient - 0:0:0:0:0:0:0:0:49550,重连耗时:22 ms
+6051605 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:24, received:(0p)(0b), handled:0, sent:(6p)(4682b)
+6051693 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:24, received:(0p)(0b), handled:0, sent:(6p)(4682b)
+6081630 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:24, received:(0p)(0b), handled:0, sent:(6p)(4682b)
+6081712 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:24, received:(0p)(0b), handled:0, sent:(6p)(4682b)
+6111645 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:24, received:(0p)(0b), handled:0, sent:(6p)(4682b)
+6111732 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:24, received:(0p)(0b), handled:0, sent:(6p)(4682b)
+6137799 [tio-timer-checkheartbeat-2] INFO  org.tio.server.ServerGroupContext - 
+null
+ ├ 当前时间:1568564004218
+ ├ 连接统计
+ │ 	 ├ 共接受过连接数  :25
+ │ 	 ├ 当前连接数            :1
+ │ 	 ├ 异IP连接数           :1
+ │ 	 └ 关闭过的连接数  :24
+ ├ 消息统计
+ │ 	 ├ 已处理消息  :6
+ │ 	 ├ 已接收消息(packet/byte):6/4682
+ │ 	 ├ 已发送消息(packet/byte):0/0b
+ │ 	 ├ 平均每次TCP包接收的字节数  :780.3333333333334
+ │ 	 └ 平均每次TCP包接收的业务包  :1.0
+ └ IP统计时段 
+   	 └ []
+ ├ 节点统计
+ │ 	 ├ clientNodes :1
+ │ 	 ├ 所有连接               :1
+ │ 	 ├ 活动连接               :1
+ │ 	 ├ 关闭次数               :0
+ │ 	 ├ 绑定user数         :0
+ │ 	 ├ 绑定token数       :0
+ │ 	 └ 等待同步消息响应 :0
+ ├ 群组
+ │ 	 ├ channelmap  :0
+ │ 	 └ groupmap:0
+ └ 拉黑IP 
+   	 └ []
+6137801 [tio-timer-checkheartbeat-2] INFO  org.tio.server.ServerGroupContext - null, 检查心跳, 共1个连接, 取锁耗时0ms, 循环耗时8ms, 心跳超时时间:120000ms
+6141654 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:24, received:(0p)(0b), handled:0, sent:(6p)(4682b)
+6141739 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:24, received:(0p)(0b), handled:0, sent:(6p)(4682b)
+6171655 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:24, received:(0p)(0b), handled:0, sent:(6p)(4682b)
+6171747 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:24, received:(0p)(0b), handled:0, sent:(6p)(4682b)
+6201657 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:24, received:(0p)(0b), handled:0, sent:(6p)(4682b)
+6201749 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:24, received:(0p)(0b), handled:0, sent:(6p)(4682b)
+6231690 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:24, received:(0p)(0b), handled:0, sent:(6p)(4682b)
+6231752 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:24, received:(0p)(0b), handled:0, sent:(6p)(4682b)
+6257840 [tio-timer-checkheartbeat-2] INFO  org.tio.server.ServerGroupContext - 192.168.43.130:49550, 235150 ms没有收发消息
+6258055 [tio-55] INFO  org.tio.core.CloseRunnable - org.tio.server.ServerGroupContext@599d4691, 192.168.43.130:49550 准备关闭连接, isNeedRemove:true, 235150 ms没有收发消息
+6258055 [tio-56] INFO  c.m.b.s.c.BlockClientAioListener - 连接关闭：server地址为-192.168.43.130:6789
+6258769 [tio-55] INFO  org.tio.core.ChannelContext - 关闭前192.168.43.130:49550, 关闭后$UNKNOWN:50
+6258769 [tio-56] INFO  org.tio.core.CloseRunnable - org.tio.client.ClientGroupContext@2cc3ad05, 0:0:0:0:0:0:0:0:49550 准备关闭连接, isNeedRemove:false, 读数据时发生异常
+6258770 [tio-56] INFO  org.tio.core.ChannelContext - 关闭前0:0:0:0:0:0:0:0:49550, 关闭后$UNKNOWN:51
+6257844 [tio-timer-checkheartbeat-2] INFO  org.tio.server.ServerGroupContext - 
+null
+ ├ 当前时间:1568564124263
+ ├ 连接统计
+ │ 	 ├ 共接受过连接数  :25
+ │ 	 ├ 当前连接数            :1
+ │ 	 ├ 异IP连接数           :1
+ │ 	 └ 关闭过的连接数  :24
+ ├ 消息统计
+ │ 	 ├ 已处理消息  :6
+ │ 	 ├ 已接收消息(packet/byte):6/4682
+ │ 	 ├ 已发送消息(packet/byte):0/0b
+ │ 	 ├ 平均每次TCP包接收的字节数  :780.3333333333334
+ │ 	 └ 平均每次TCP包接收的业务包  :1.0
+ └ IP统计时段 
+   	 └ []
+ ├ 节点统计
+ │ 	 ├ clientNodes :1
+ │ 	 ├ 所有连接               :1
+ │ 	 ├ 活动连接               :1
+ │ 	 ├ 关闭次数               :0
+ │ 	 ├ 绑定user数         :0
+ │ 	 ├ 绑定token数       :0
+ │ 	 └ 等待同步消息响应 :0
+ ├ 群组
+ │ 	 ├ channelmap  :0
+ │ 	 └ groupmap:0
+ └ 拉黑IP 
+   	 └ []
+6258770 [tio-timer-checkheartbeat-2] INFO  org.tio.server.ServerGroupContext - null, 检查心跳, 共1个连接, 取锁耗时0ms, 循环耗时930ms, 心跳超时时间:120000ms
+6261707 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:0, closed:25, received:(0p)(0b), handled:0, sent:(6p)(4682b)
+6261761 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:0, closed:25, received:(0p)(0b), handled:0, sent:(6p)(4682b)
+6263781 [tio-group-135] INFO  o.t.c.ConnectionCompletionHandler - connected to 192.168.43.130:6789
+6263781 [tio-group-136] INFO  c.m.b.s.s.BlockServerAioListener - onAfterConnected channelContext:192.168.43.130:49779, isConnected:true, isReconnect:false
+6263787 [tio-group-135] INFO  c.m.b.socket.client.ClientStarter - 连接192.168.43.130:6789成功
+6263788 [tio-client-reconn-2] INFO  org.tio.client.AioClient - 0:0:0:0:0:0:0:0:49779,重连耗时:10 ms
+6291722 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:25, received:(0p)(0b), handled:0, sent:(6p)(4682b)
+6291771 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:25, received:(0p)(0b), handled:0, sent:(6p)(4682b)
+6321018 [pool-2-thread-1] INFO  c.m.b.socket.client.ClientStarter - 本机IP：192.168.43.130
+6321198 [pool-2-thread-1] INFO  c.m.b.socket.client.ClientStarter - 共有4个成员需要连接：[Member{appId='kfbiC', name='2017301500', ip='192.168.43.130'}, Member{appId='kfbiC', name='2017301500', ip='192.168.41.130'}, Member{appId='kfbiC', name='2017301500', ip='192.168.41.130'}, Member{appId='kfbiC', name='2017301500', ip='192.168.41.130'}]
+6321730 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:25, received:(0p)(0b), handled:0, sent:(6p)(4682b)
+6321774 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:25, received:(0p)(0b), handled:0, sent:(6p)(4682b)
+6351731 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:25, received:(0p)(0b), handled:0, sent:(6p)(4682b)
+6351774 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:25, received:(0p)(0b), handled:0, sent:(6p)(4682b)
+6378839 [tio-timer-checkheartbeat-2] INFO  org.tio.server.ServerGroupContext - 
+null
+ ├ 当前时间:1568564245258
+ ├ 连接统计
+ │ 	 ├ 共接受过连接数  :26
+ │ 	 ├ 当前连接数            :1
+ │ 	 ├ 异IP连接数           :1
+ │ 	 └ 关闭过的连接数  :25
+ ├ 消息统计
+ │ 	 ├ 已处理消息  :6
+ │ 	 ├ 已接收消息(packet/byte):6/4682
+ │ 	 ├ 已发送消息(packet/byte):0/0b
+ │ 	 ├ 平均每次TCP包接收的字节数  :780.3333333333334
+ │ 	 └ 平均每次TCP包接收的业务包  :1.0
+ └ IP统计时段 
+   	 └ []
+ ├ 节点统计
+ │ 	 ├ clientNodes :1
+ │ 	 ├ 所有连接               :1
+ │ 	 ├ 活动连接               :1
+ │ 	 ├ 关闭次数               :0
+ │ 	 ├ 绑定user数         :0
+ │ 	 ├ 绑定token数       :0
+ │ 	 └ 等待同步消息响应 :0
+ ├ 群组
+ │ 	 ├ channelmap  :0
+ │ 	 └ groupmap:0
+ └ 拉黑IP 
+   	 └ []
+6378846 [tio-timer-checkheartbeat-2] INFO  org.tio.server.ServerGroupContext - null, 检查心跳, 共1个连接, 取锁耗时0ms, 循环耗时10ms, 心跳超时时间:120000ms
+6381731 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:25, received:(0p)(0b), handled:0, sent:(6p)(4682b)
+6381775 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:25, received:(0p)(0b), handled:0, sent:(6p)(4682b)
+6411732 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:25, received:(0p)(0b), handled:0, sent:(6p)(4682b)
+6411776 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:25, received:(0p)(0b), handled:0, sent:(6p)(4682b)
+6441733 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:25, received:(0p)(0b), handled:0, sent:(6p)(4682b)
+6441780 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:25, received:(0p)(0b), handled:0, sent:(6p)(4682b)
+6471733 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:25, received:(0p)(0b), handled:0, sent:(6p)(4682b)
+6471782 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:25, received:(0p)(0b), handled:0, sent:(6p)(4682b)
+6498847 [tio-timer-checkheartbeat-2] INFO  org.tio.server.ServerGroupContext - 192.168.43.130:49779, 235060 ms没有收发消息
+6498848 [tio-timer-checkheartbeat-2] INFO  org.tio.server.ServerGroupContext - 
+null
+ ├ 当前时间:1568564365267
+ ├ 连接统计
+ │ 	 ├ 共接受过连接数  :26
+ │ 	 ├ 当前连接数            :1
+ │ 	 ├ 异IP连接数           :1
+ │ 	 └ 关闭过的连接数  :25
+ ├ 消息统计
+ │ 	 ├ 已处理消息  :6
+ │ 	 ├ 已接收消息(packet/byte):6/4682
+ │ 	 ├ 已发送消息(packet/byte):0/0b
+ │ 	 ├ 平均每次TCP包接收的字节数  :780.3333333333334
+ │ 	 └ 平均每次TCP包接收的业务包  :1.0
+ └ IP统计时段 
+   	 └ []
+ ├ 节点统计
+ │ 	 ├ clientNodes :1
+ │ 	 ├ 所有连接               :1
+ │ 	 ├ 活动连接               :1
+ │ 	 ├ 关闭次数               :0
+ │ 	 ├ 绑定user数         :0
+ │ 	 ├ 绑定token数       :0
+ │ 	 └ 等待同步消息响应 :0
+ ├ 群组
+ │ 	 ├ channelmap  :0
+ │ 	 └ groupmap:0
+ └ 拉黑IP 
+   	 └ []
+6498850 [tio-58] INFO  org.tio.core.CloseRunnable - org.tio.server.ServerGroupContext@599d4691, 192.168.43.130:49779 准备关闭连接, isNeedRemove:true, 235060 ms没有收发消息
+6498850 [tio-59] INFO  c.m.b.s.c.BlockClientAioListener - 连接关闭：server地址为-192.168.43.130:6789
+6498856 [tio-timer-checkheartbeat-2] INFO  org.tio.server.ServerGroupContext - null, 检查心跳, 共1个连接, 取锁耗时0ms, 循环耗时10ms, 心跳超时时间:120000ms
+6498857 [tio-58] INFO  org.tio.core.ChannelContext - 关闭前192.168.43.130:49779, 关闭后$UNKNOWN:52
+6498857 [tio-59] INFO  org.tio.core.CloseRunnable - org.tio.client.ClientGroupContext@2cc3ad05, 0:0:0:0:0:0:0:0:49779 准备关闭连接, isNeedRemove:false, 读数据时发生异常
+6498858 [tio-59] INFO  org.tio.core.ChannelContext - 关闭前0:0:0:0:0:0:0:0:49779, 关闭后$UNKNOWN:53
+6501734 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:0, closed:26, received:(0p)(0b), handled:0, sent:(6p)(4682b)
+6501783 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:0, closed:26, received:(0p)(0b), handled:0, sent:(6p)(4682b)
+6503862 [tio-group-139] INFO  o.t.c.ConnectionCompletionHandler - connected to 192.168.43.130:6789
+6503862 [tio-group-140] INFO  c.m.b.s.s.BlockServerAioListener - onAfterConnected channelContext:192.168.43.130:49905, isConnected:true, isReconnect:false
+6503862 [tio-client-reconn-3] INFO  org.tio.client.AioClient - 0:0:0:0:0:0:0:0:49905,重连耗时:9 ms
+6503862 [tio-group-139] INFO  c.m.b.socket.client.ClientStarter - 连接192.168.43.130:6789成功
+6531735 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:26, received:(0p)(0b), handled:0, sent:(6p)(4682b)
+6531784 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:26, received:(0p)(0b), handled:0, sent:(6p)(4682b)
+6561736 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:26, received:(0p)(0b), handled:0, sent:(6p)(4682b)
+6561785 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:26, received:(0p)(0b), handled:0, sent:(6p)(4682b)
+6591737 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:26, received:(0p)(0b), handled:0, sent:(6p)(4682b)
+6591786 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:26, received:(0p)(0b), handled:0, sent:(6p)(4682b)
+6618858 [tio-timer-checkheartbeat-2] INFO  org.tio.server.ServerGroupContext - 
+null
+ ├ 当前时间:1568564485277
+ ├ 连接统计
+ │ 	 ├ 共接受过连接数  :27
+ │ 	 ├ 当前连接数            :1
+ │ 	 ├ 异IP连接数           :1
+ │ 	 └ 关闭过的连接数  :26
+ ├ 消息统计
+ │ 	 ├ 已处理消息  :6
+ │ 	 ├ 已接收消息(packet/byte):6/4682
+ │ 	 ├ 已发送消息(packet/byte):0/0b
+ │ 	 ├ 平均每次TCP包接收的字节数  :780.3333333333334
+ │ 	 └ 平均每次TCP包接收的业务包  :1.0
+ └ IP统计时段 
+   	 └ []
+ ├ 节点统计
+ │ 	 ├ clientNodes :1
+ │ 	 ├ 所有连接               :1
+ │ 	 ├ 活动连接               :1
+ │ 	 ├ 关闭次数               :0
+ │ 	 ├ 绑定user数         :0
+ │ 	 ├ 绑定token数       :0
+ │ 	 └ 等待同步消息响应 :0
+ ├ 群组
+ │ 	 ├ channelmap  :0
+ │ 	 └ groupmap:0
+ └ 拉黑IP 
+   	 └ []
+6618860 [tio-timer-checkheartbeat-2] INFO  org.tio.server.ServerGroupContext - null, 检查心跳, 共1个连接, 取锁耗时0ms, 循环耗时0ms, 心跳超时时间:120000ms
+6620985 [pool-2-thread-1] INFO  c.m.b.socket.client.ClientStarter - 本机IP：192.168.43.130
+6621412 [pool-2-thread-1] INFO  c.m.b.socket.client.ClientStarter - 共有4个成员需要连接：[Member{appId='kfbiC', name='2017301500', ip='192.168.43.130'}, Member{appId='kfbiC', name='2017301500', ip='192.168.41.130'}, Member{appId='kfbiC', name='2017301500', ip='192.168.41.130'}, Member{appId='kfbiC', name='2017301500', ip='192.168.41.130'}]
+6621737 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:26, received:(0p)(0b), handled:0, sent:(6p)(4682b)
+6621786 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:26, received:(0p)(0b), handled:0, sent:(6p)(4682b)
+6651738 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:26, received:(0p)(0b), handled:0, sent:(6p)(4682b)
+6651787 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:26, received:(0p)(0b), handled:0, sent:(6p)(4682b)
+6674315 [tio-group-142] INFO  c.m.b.s.s.BlockServerAioListener - onAfterReceived channelContext:{}, packet:{}, packetSize:{}
+6674321 [pool-1-thread-1] INFO  c.m.b.s.h.s.GenerateBlockRequestHandler - 收到来自于<kfbiC><请求生成Block>消息，block信息为[Block{blockHeader=BlockHeader{version=1, hashPreviousBlock='null', hashMerkleRoot='498131e51ce2a9058682bf6c0f8891f2435ff045653542a8a0fcb025d5196c28', publicKey='A8WLqHTjcT/FQ2IWhIePNShUEcdCzu5dG+XrQU8OMu54', number=1, timeStamp=1568564540730, nonce=0, hashList=[a7988881b0eb8c42e24bad90173c0b0d232b5ab08d56a8df685b9c1f96226343]}, blockBody=BlockBody{instructions=[Instruction{json='{"logisticsCode":"51a1d485-79d4-4687-99af-28777b9c8208","expressBillCode":"d","projectCode":"kfbiC","logisticsTime":"2019年09月16日","transportCompanyName":"ff","transportDelivererName":"ff","transportReceiverName":"ff","goodsStatus":"ff","goodsQuantity":"ff","goodsQuality":"ff","senderName":"ff","receiverName":"f","receiverAddress":"df","receiveTime":"fff","remark":"fff"}', timeStamp=1568564540722, publicKey='A8WLqHTjcT/FQ2IWhIePNShUEcdCzu5dG+XrQU8OMu54', sign='MEQCIGW2wmoB+mL0L3nTp/zAW6FQvVxuS2k9aKAg0XWvWLRvAiBuFOEFt4IbOOpy7te18OsD2wTYTliMl664uRZ/HzLelg==', hash='a7988881b0eb8c42e24bad90173c0b0d232b5ab08d56a8df685b9c1f96226343'}]}, hash='46d55049c352c1e0562194b15c392253bb8b7caae164d1fdd94ec6e64e41b82e'}]
+6674332 [pool-1-thread-1] INFO  c.m.b.s.h.s.GenerateBlockRequestHandler - 校验结果:RpcCheckBlockBody{code=0, message='OK'}
+6674364 [tio-group-144] INFO  c.m.b.s.s.BlockServerAioListener - onAfterReceived channelContext:{}, packet:{}, packetSize:{}
+6674364 [pool-1-thread-1] INFO  c.m.b.s.h.server.PbftVoteHandler - 收到来自于<kfbiC><投票>消息，投票信息为[VoteMsg{voteType=2, hash='46d55049c352c1e0562194b15c392253bb8b7caae164d1fdd94ec6e64e41b82e', number=1, appId='kfbiC', agree=true}]
+6681738 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:26, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+6681787 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:26, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+6711738 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:26, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+6711787 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:26, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+6738861 [tio-timer-checkheartbeat-2] INFO  org.tio.server.ServerGroupContext - 
+null
+ ├ 当前时间:1568564605280
+ ├ 连接统计
+ │ 	 ├ 共接受过连接数  :27
+ │ 	 ├ 当前连接数            :1
+ │ 	 ├ 异IP连接数           :1
+ │ 	 └ 关闭过的连接数  :26
+ ├ 消息统计
+ │ 	 ├ 已处理消息  :8
+ │ 	 ├ 已接收消息(packet/byte):8/6226
+ │ 	 ├ 已发送消息(packet/byte):0/0b
+ │ 	 ├ 平均每次TCP包接收的字节数  :778.25
+ │ 	 └ 平均每次TCP包接收的业务包  :1.0
+ └ IP统计时段 
+   	 └ []
+ ├ 节点统计
+ │ 	 ├ clientNodes :1
+ │ 	 ├ 所有连接               :1
+ │ 	 ├ 活动连接               :1
+ │ 	 ├ 关闭次数               :0
+ │ 	 ├ 绑定user数         :0
+ │ 	 ├ 绑定token数       :0
+ │ 	 └ 等待同步消息响应 :0
+ ├ 群组
+ │ 	 ├ channelmap  :0
+ │ 	 └ groupmap:0
+ └ 拉黑IP 
+   	 └ []
+6738869 [tio-timer-checkheartbeat-2] INFO  org.tio.server.ServerGroupContext - null, 检查心跳, 共1个连接, 取锁耗时0ms, 循环耗时0ms, 心跳超时时间:120000ms
+6741747 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:26, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+6741790 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:26, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+6771748 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:26, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+6771791 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:26, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+6801748 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:26, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+6801792 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:26, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+6831749 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:26, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+6831793 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:26, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+6858871 [tio-timer-checkheartbeat-2] INFO  org.tio.server.ServerGroupContext - 192.168.43.130:49905, 184509 ms没有收发消息
+6858871 [tio-timer-checkheartbeat-2] INFO  org.tio.server.ServerGroupContext - 
+null
+ ├ 当前时间:1568564725290
+ ├ 连接统计
+ │ 	 ├ 共接受过连接数  :27
+ │ 	 ├ 当前连接数            :1
+ │ 	 ├ 异IP连接数           :1
+ │ 	 └ 关闭过的连接数  :26
+ ├ 消息统计
+ │ 	 ├ 已处理消息  :8
+ │ 	 ├ 已接收消息(packet/byte):8/6226
+ │ 	 ├ 已发送消息(packet/byte):0/0b
+ │ 	 ├ 平均每次TCP包接收的字节数  :778.25
+ │ 	 └ 平均每次TCP包接收的业务包  :1.0
+ └ IP统计时段 
+   	 └ []
+ ├ 节点统计
+ │ 	 ├ clientNodes :1
+ │ 	 ├ 所有连接               :1
+ │ 	 ├ 活动连接               :1
+ │ 	 ├ 关闭次数               :0
+ │ 	 ├ 绑定user数         :0
+ │ 	 ├ 绑定token数       :0
+ │ 	 └ 等待同步消息响应 :0
+ ├ 群组
+ │ 	 ├ channelmap  :0
+ │ 	 └ groupmap:0
+ └ 拉黑IP 
+   	 └ []
+6858872 [tio-60] INFO  org.tio.core.CloseRunnable - org.tio.server.ServerGroupContext@599d4691, 192.168.43.130:49905 准备关闭连接, isNeedRemove:true, 184509 ms没有收发消息
+6858879 [tio-timer-checkheartbeat-2] INFO  org.tio.server.ServerGroupContext - null, 检查心跳, 共1个连接, 取锁耗时0ms, 循环耗时0ms, 心跳超时时间:120000ms
+6858879 [tio-60] INFO  org.tio.core.ChannelContext - 关闭前192.168.43.130:49905, 关闭后$UNKNOWN:54
+6858880 [tio-62] INFO  c.m.b.s.c.BlockClientAioListener - 连接关闭：server地址为-192.168.43.130:6789
+6858881 [tio-62] INFO  org.tio.core.CloseRunnable - org.tio.client.ClientGroupContext@2cc3ad05, 0:0:0:0:0:0:0:0:49905 准备关闭连接, isNeedRemove:false, 读数据时发生异常
+6858881 [tio-62] INFO  org.tio.core.ChannelContext - 关闭前0:0:0:0:0:0:0:0:49905, 关闭后$UNKNOWN:55
+6861750 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:0, closed:27, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+6861794 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:0, closed:27, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+6863891 [tio-group-147] INFO  o.t.c.ConnectionCompletionHandler - connected to 192.168.43.130:6789
+6863891 [tio-client-reconn-4] INFO  org.tio.client.AioClient - 0:0:0:0:0:0:0:0:50203,重连耗时:11 ms
+6863891 [tio-group-147] INFO  c.m.b.socket.client.ClientStarter - 连接192.168.43.130:6789成功
+6863892 [tio-group-148] INFO  c.m.b.s.s.BlockServerAioListener - onAfterConnected channelContext:192.168.43.130:50203, isConnected:true, isReconnect:false
+6891750 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:27, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+6891795 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:27, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+6921016 [pool-2-thread-1] INFO  c.m.b.socket.client.ClientStarter - 本机IP：192.168.43.130
+6921139 [pool-2-thread-1] INFO  c.m.b.socket.client.ClientStarter - 共有4个成员需要连接：[Member{appId='kfbiC', name='2017301500', ip='192.168.43.130'}, Member{appId='kfbiC', name='2017301500', ip='192.168.41.130'}, Member{appId='kfbiC', name='2017301500', ip='192.168.41.130'}, Member{appId='kfbiC', name='2017301500', ip='192.168.41.130'}]
+6921751 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:27, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+6921795 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:27, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+6951752 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:27, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+6951797 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:27, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+6978880 [tio-timer-checkheartbeat-2] INFO  org.tio.server.ServerGroupContext - 
+null
+ ├ 当前时间:1568564845299
+ ├ 连接统计
+ │ 	 ├ 共接受过连接数  :28
+ │ 	 ├ 当前连接数            :1
+ │ 	 ├ 异IP连接数           :1
+ │ 	 └ 关闭过的连接数  :27
+ ├ 消息统计
+ │ 	 ├ 已处理消息  :8
+ │ 	 ├ 已接收消息(packet/byte):8/6226
+ │ 	 ├ 已发送消息(packet/byte):0/0b
+ │ 	 ├ 平均每次TCP包接收的字节数  :778.25
+ │ 	 └ 平均每次TCP包接收的业务包  :1.0
+ └ IP统计时段 
+   	 └ []
+ ├ 节点统计
+ │ 	 ├ clientNodes :1
+ │ 	 ├ 所有连接               :1
+ │ 	 ├ 活动连接               :1
+ │ 	 ├ 关闭次数               :0
+ │ 	 ├ 绑定user数         :0
+ │ 	 ├ 绑定token数       :0
+ │ 	 └ 等待同步消息响应 :0
+ ├ 群组
+ │ 	 ├ channelmap  :0
+ │ 	 └ groupmap:0
+ └ 拉黑IP 
+   	 └ []
+6978888 [tio-timer-checkheartbeat-2] INFO  org.tio.server.ServerGroupContext - null, 检查心跳, 共1个连接, 取锁耗时0ms, 循环耗时10ms, 心跳超时时间:120000ms
+6981752 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:27, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+6981797 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:27, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+7011752 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:27, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+7011798 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:27, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+7041753 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:27, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+7041799 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:27, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+7071754 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:27, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+7071800 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:27, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+7098889 [tio-timer-checkheartbeat-2] INFO  org.tio.server.ServerGroupContext - 192.168.43.130:50203, 234990 ms没有收发消息
+7098890 [tio-timer-checkheartbeat-2] INFO  org.tio.server.ServerGroupContext - 
+null
+ ├ 当前时间:1568564965309
+ ├ 连接统计
+ │ 	 ├ 共接受过连接数  :28
+ │ 	 ├ 当前连接数            :1
+ │ 	 ├ 异IP连接数           :1
+ │ 	 └ 关闭过的连接数  :27
+ ├ 消息统计
+ │ 	 ├ 已处理消息  :8
+ │ 	 ├ 已接收消息(packet/byte):8/6226
+ │ 	 ├ 已发送消息(packet/byte):0/0b
+ │ 	 ├ 平均每次TCP包接收的字节数  :778.25
+ │ 	 └ 平均每次TCP包接收的业务包  :1.0
+ └ IP统计时段 
+   	 └ []
+ ├ 节点统计
+ │ 	 ├ clientNodes :1
+ │ 	 ├ 所有连接               :1
+ │ 	 ├ 活动连接               :1
+ │ 	 ├ 关闭次数               :0
+ │ 	 ├ 绑定user数         :0
+ │ 	 ├ 绑定token数       :0
+ │ 	 └ 等待同步消息响应 :0
+ ├ 群组
+ │ 	 ├ channelmap  :0
+ │ 	 └ groupmap:0
+ └ 拉黑IP 
+   	 └ []
+7098892 [tio-timer-checkheartbeat-2] INFO  org.tio.server.ServerGroupContext - null, 检查心跳, 共1个连接, 取锁耗时0ms, 循环耗时10ms, 心跳超时时间:120000ms
+7098900 [tio-63] INFO  org.tio.core.CloseRunnable - org.tio.server.ServerGroupContext@599d4691, 192.168.43.130:50203 准备关闭连接, isNeedRemove:true, 234990 ms没有收发消息
+7098901 [tio-63] INFO  org.tio.core.ChannelContext - 关闭前192.168.43.130:50203, 关闭后$UNKNOWN:56
+7098902 [tio-63] INFO  c.m.b.s.c.BlockClientAioListener - 连接关闭：server地址为-192.168.43.130:6789
+7098902 [tio-63] INFO  org.tio.core.CloseRunnable - org.tio.client.ClientGroupContext@2cc3ad05, 0:0:0:0:0:0:0:0:50203 准备关闭连接, isNeedRemove:false, 读数据时发生异常
+7098903 [tio-63] INFO  org.tio.core.ChannelContext - 关闭前0:0:0:0:0:0:0:0:50203, 关闭后$UNKNOWN:57
+7101754 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:0, closed:28, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+7101800 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:0, closed:28, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+7103913 [tio-group-151] INFO  o.t.c.ConnectionCompletionHandler - connected to 192.168.43.130:6789
+7103914 [tio-client-reconn-1] INFO  org.tio.client.AioClient - 0:0:0:0:0:0:0:0:50419,重连耗时:10 ms
+7103914 [tio-group-151] INFO  c.m.b.socket.client.ClientStarter - 连接192.168.43.130:6789成功
+7103914 [tio-group-152] INFO  c.m.b.s.s.BlockServerAioListener - onAfterConnected channelContext:192.168.43.130:50419, isConnected:true, isReconnect:false
+7131755 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:28, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+7131801 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:28, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+7161755 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:28, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+7161801 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:28, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+7191755 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:28, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+7191801 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:28, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+7218893 [tio-timer-checkheartbeat-2] INFO  org.tio.server.ServerGroupContext - 
+null
+ ├ 当前时间:1568565085312
+ ├ 连接统计
+ │ 	 ├ 共接受过连接数  :29
+ │ 	 ├ 当前连接数            :1
+ │ 	 ├ 异IP连接数           :1
+ │ 	 └ 关闭过的连接数  :28
+ ├ 消息统计
+ │ 	 ├ 已处理消息  :8
+ │ 	 ├ 已接收消息(packet/byte):8/6226
+ │ 	 ├ 已发送消息(packet/byte):0/0b
+ │ 	 ├ 平均每次TCP包接收的字节数  :778.25
+ │ 	 └ 平均每次TCP包接收的业务包  :1.0
+ └ IP统计时段 
+   	 └ []
+ ├ 节点统计
+ │ 	 ├ clientNodes :1
+ │ 	 ├ 所有连接               :1
+ │ 	 ├ 活动连接               :1
+ │ 	 ├ 关闭次数               :0
+ │ 	 ├ 绑定user数         :0
+ │ 	 ├ 绑定token数       :0
+ │ 	 └ 等待同步消息响应 :0
+ ├ 群组
+ │ 	 ├ channelmap  :0
+ │ 	 └ groupmap:0
+ └ 拉黑IP 
+   	 └ []
+7218894 [tio-timer-checkheartbeat-2] INFO  org.tio.server.ServerGroupContext - null, 检查心跳, 共1个连接, 取锁耗时0ms, 循环耗时0ms, 心跳超时时间:120000ms
+7221012 [pool-2-thread-1] INFO  c.m.b.socket.client.ClientStarter - 本机IP：192.168.43.130
+7221168 [pool-2-thread-1] INFO  c.m.b.socket.client.ClientStarter - 共有4个成员需要连接：[Member{appId='kfbiC', name='2017301500', ip='192.168.43.130'}, Member{appId='kfbiC', name='2017301500', ip='192.168.41.130'}, Member{appId='kfbiC', name='2017301500', ip='192.168.41.130'}, Member{appId='kfbiC', name='2017301500', ip='192.168.41.130'}]
+7221756 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:28, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+7221802 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:28, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+7251757 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:28, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+7251804 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:28, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+7281760 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:28, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+7281806 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:28, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+7311761 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:28, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+7311829 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:28, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+7338895 [tio-timer-checkheartbeat-2] INFO  org.tio.server.ServerGroupContext - 192.168.43.130:50419, 234979 ms没有收发消息
+7338896 [tio-timer-checkheartbeat-2] INFO  org.tio.server.ServerGroupContext - 
+null
+ ├ 当前时间:1568565205315
+ ├ 连接统计
+ │ 	 ├ 共接受过连接数  :29
+ │ 	 ├ 当前连接数            :1
+ │ 	 ├ 异IP连接数           :1
+ │ 	 └ 关闭过的连接数  :28
+ ├ 消息统计
+ │ 	 ├ 已处理消息  :8
+ │ 	 ├ 已接收消息(packet/byte):8/6226
+ │ 	 ├ 已发送消息(packet/byte):0/0b
+ │ 	 ├ 平均每次TCP包接收的字节数  :778.25
+ │ 	 └ 平均每次TCP包接收的业务包  :1.0
+ └ IP统计时段 
+   	 └ []
+ ├ 节点统计
+ │ 	 ├ clientNodes :1
+ │ 	 ├ 所有连接               :1
+ │ 	 ├ 活动连接               :1
+ │ 	 ├ 关闭次数               :0
+ │ 	 ├ 绑定user数         :0
+ │ 	 ├ 绑定token数       :0
+ │ 	 └ 等待同步消息响应 :0
+ ├ 群组
+ │ 	 ├ channelmap  :0
+ │ 	 └ groupmap:0
+ └ 拉黑IP 
+   	 └ []
+7338897 [tio-timer-checkheartbeat-2] INFO  org.tio.server.ServerGroupContext - null, 检查心跳, 共1个连接, 取锁耗时0ms, 循环耗时0ms, 心跳超时时间:120000ms
+7338904 [tio-65] INFO  org.tio.core.CloseRunnable - org.tio.server.ServerGroupContext@599d4691, 192.168.43.130:50419 准备关闭连接, isNeedRemove:true, 234979 ms没有收发消息
+7338905 [tio-65] INFO  org.tio.core.ChannelContext - 关闭前192.168.43.130:50419, 关闭后$UNKNOWN:58
+7338906 [tio-65] INFO  c.m.b.s.c.BlockClientAioListener - 连接关闭：server地址为-192.168.43.130:6789
+7338906 [tio-65] INFO  org.tio.core.CloseRunnable - org.tio.client.ClientGroupContext@2cc3ad05, 0:0:0:0:0:0:0:0:50419 准备关闭连接, isNeedRemove:false, 读数据时发生异常
+7338906 [tio-65] INFO  org.tio.core.ChannelContext - 关闭前0:0:0:0:0:0:0:0:50419, 关闭后$UNKNOWN:59
+7341762 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:0, closed:29, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+7341830 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:0, closed:29, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+7343915 [tio-group-155] INFO  o.t.c.ConnectionCompletionHandler - connected to 192.168.43.130:6789
+7343915 [tio-group-156] INFO  c.m.b.s.s.BlockServerAioListener - onAfterConnected channelContext:192.168.43.130:50603, isConnected:true, isReconnect:false
+7343916 [tio-group-155] INFO  c.m.b.socket.client.ClientStarter - 连接192.168.43.130:6789成功
+7343916 [tio-client-reconn-2] INFO  org.tio.client.AioClient - 0:0:0:0:0:0:0:0:50603,重连耗时:12 ms
+7371763 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:29, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+7371831 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:29, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+7401763 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:29, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+7401831 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:29, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+7431763 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:29, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+7431831 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:29, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+7458898 [tio-timer-checkheartbeat-2] INFO  org.tio.server.ServerGroupContext - 
+null
+ ├ 当前时间:1568565325317
+ ├ 连接统计
+ │ 	 ├ 共接受过连接数  :30
+ │ 	 ├ 当前连接数            :1
+ │ 	 ├ 异IP连接数           :1
+ │ 	 └ 关闭过的连接数  :29
+ ├ 消息统计
+ │ 	 ├ 已处理消息  :8
+ │ 	 ├ 已接收消息(packet/byte):8/6226
+ │ 	 ├ 已发送消息(packet/byte):0/0b
+ │ 	 ├ 平均每次TCP包接收的字节数  :778.25
+ │ 	 └ 平均每次TCP包接收的业务包  :1.0
+ └ IP统计时段 
+   	 └ []
+ ├ 节点统计
+ │ 	 ├ clientNodes :1
+ │ 	 ├ 所有连接               :1
+ │ 	 ├ 活动连接               :1
+ │ 	 ├ 关闭次数               :0
+ │ 	 ├ 绑定user数         :0
+ │ 	 ├ 绑定token数       :0
+ │ 	 └ 等待同步消息响应 :0
+ ├ 群组
+ │ 	 ├ channelmap  :0
+ │ 	 └ groupmap:0
+ └ 拉黑IP 
+   	 └ []
+7458899 [tio-timer-checkheartbeat-2] INFO  org.tio.server.ServerGroupContext - null, 检查心跳, 共1个连接, 取锁耗时0ms, 循环耗时0ms, 心跳超时时间:120000ms
+7461764 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:29, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+7461832 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:29, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+7491765 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:29, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+7491833 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:29, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+7521037 [pool-2-thread-1] INFO  c.m.b.socket.client.ClientStarter - 本机IP：192.168.43.130
+7521191 [pool-2-thread-1] INFO  c.m.b.socket.client.ClientStarter - 共有4个成员需要连接：[Member{appId='kfbiC', name='2017301500', ip='192.168.43.130'}, Member{appId='kfbiC', name='2017301500', ip='192.168.41.130'}, Member{appId='kfbiC', name='2017301500', ip='192.168.41.130'}, Member{appId='kfbiC', name='2017301500', ip='192.168.41.130'}]
+7521766 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:29, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+7521843 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:29, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+7551767 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:29, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+7551843 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:29, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+7578899 [tio-timer-checkheartbeat-2] INFO  org.tio.server.ServerGroupContext - 192.168.43.130:50603, 234977 ms没有收发消息
+7578900 [tio-timer-checkheartbeat-2] INFO  org.tio.server.ServerGroupContext - 
+null
+ ├ 当前时间:1568565445318
+ ├ 连接统计
+ │ 	 ├ 共接受过连接数  :30
+ │ 	 ├ 当前连接数            :1
+ │ 	 ├ 异IP连接数           :1
+ │ 	 └ 关闭过的连接数  :29
+ ├ 消息统计
+ │ 	 ├ 已处理消息  :8
+ │ 	 ├ 已接收消息(packet/byte):8/6226
+ │ 	 ├ 已发送消息(packet/byte):0/0b
+ │ 	 ├ 平均每次TCP包接收的字节数  :778.25
+ │ 	 └ 平均每次TCP包接收的业务包  :1.0
+ └ IP统计时段 
+   	 └ []
+ ├ 节点统计
+ │ 	 ├ clientNodes :1
+ │ 	 ├ 所有连接               :1
+ │ 	 ├ 活动连接               :1
+ │ 	 ├ 关闭次数               :0
+ │ 	 ├ 绑定user数         :0
+ │ 	 ├ 绑定token数       :0
+ │ 	 └ 等待同步消息响应 :0
+ ├ 群组
+ │ 	 ├ channelmap  :0
+ │ 	 └ groupmap:0
+ └ 拉黑IP 
+   	 └ []
+7578901 [tio-timer-checkheartbeat-2] INFO  org.tio.server.ServerGroupContext - null, 检查心跳, 共1个连接, 取锁耗时0ms, 循环耗时11ms, 心跳超时时间:120000ms
+7578908 [tio-67] INFO  org.tio.core.CloseRunnable - org.tio.server.ServerGroupContext@599d4691, 192.168.43.130:50603 准备关闭连接, isNeedRemove:true, 234977 ms没有收发消息
+7578909 [tio-67] INFO  org.tio.core.ChannelContext - 关闭前192.168.43.130:50603, 关闭后$UNKNOWN:60
+7578910 [tio-67] INFO  c.m.b.s.c.BlockClientAioListener - 连接关闭：server地址为-192.168.43.130:6789
+7578910 [tio-67] INFO  org.tio.core.CloseRunnable - org.tio.client.ClientGroupContext@2cc3ad05, 0:0:0:0:0:0:0:0:50603 准备关闭连接, isNeedRemove:false, 读数据时发生异常
+7578911 [tio-67] INFO  org.tio.core.ChannelContext - 关闭前0:0:0:0:0:0:0:0:50603, 关闭后$UNKNOWN:61
+7581768 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:0, closed:30, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+7581845 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:0, closed:30, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+7583923 [tio-group-159] INFO  o.t.c.ConnectionCompletionHandler - connected to 192.168.43.130:6789
+7583923 [tio-group-160] INFO  c.m.b.s.s.BlockServerAioListener - onAfterConnected channelContext:192.168.43.130:50745, isConnected:true, isReconnect:false
+7583924 [tio-client-reconn-3] INFO  org.tio.client.AioClient - 0:0:0:0:0:0:0:0:50745,重连耗时:11 ms
+7583924 [tio-group-159] INFO  c.m.b.socket.client.ClientStarter - 连接192.168.43.130:6789成功
+7611768 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:30, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+7611845 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:30, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+7641769 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:30, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+7641846 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:30, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+7671769 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:30, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+7671847 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:30, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+7698901 [tio-timer-checkheartbeat-2] INFO  org.tio.server.ServerGroupContext - 
+null
+ ├ 当前时间:1568565565320
+ ├ 连接统计
+ │ 	 ├ 共接受过连接数  :31
+ │ 	 ├ 当前连接数            :1
+ │ 	 ├ 异IP连接数           :1
+ │ 	 └ 关闭过的连接数  :30
+ ├ 消息统计
+ │ 	 ├ 已处理消息  :8
+ │ 	 ├ 已接收消息(packet/byte):8/6226
+ │ 	 ├ 已发送消息(packet/byte):0/0b
+ │ 	 ├ 平均每次TCP包接收的字节数  :778.25
+ │ 	 └ 平均每次TCP包接收的业务包  :1.0
+ └ IP统计时段 
+   	 └ []
+ ├ 节点统计
+ │ 	 ├ clientNodes :1
+ │ 	 ├ 所有连接               :1
+ │ 	 ├ 活动连接               :1
+ │ 	 ├ 关闭次数               :0
+ │ 	 ├ 绑定user数         :0
+ │ 	 ├ 绑定token数       :0
+ │ 	 └ 等待同步消息响应 :0
+ ├ 群组
+ │ 	 ├ channelmap  :0
+ │ 	 └ groupmap:0
+ └ 拉黑IP 
+   	 └ []
+7698909 [tio-timer-checkheartbeat-2] INFO  org.tio.server.ServerGroupContext - null, 检查心跳, 共1个连接, 取锁耗时0ms, 循环耗时0ms, 心跳超时时间:120000ms
+7701771 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:30, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+7701847 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:30, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+7731771 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:30, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+7731847 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:30, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+7761772 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:30, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+7761848 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:30, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+7791772 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:30, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+7791848 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:30, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+7818910 [tio-timer-checkheartbeat-2] INFO  org.tio.server.ServerGroupContext - 192.168.43.130:50745, 234981 ms没有收发消息
+7818911 [tio-timer-checkheartbeat-2] INFO  org.tio.server.ServerGroupContext - 
+null
+ ├ 当前时间:1568565685329
+ ├ 连接统计
+ │ 	 ├ 共接受过连接数  :31
+ │ 	 ├ 当前连接数            :1
+ │ 	 ├ 异IP连接数           :1
+ │ 	 └ 关闭过的连接数  :30
+ ├ 消息统计
+ │ 	 ├ 已处理消息  :8
+ │ 	 ├ 已接收消息(packet/byte):8/6226
+ │ 	 ├ 已发送消息(packet/byte):0/0b
+ │ 	 ├ 平均每次TCP包接收的字节数  :778.25
+ │ 	 └ 平均每次TCP包接收的业务包  :1.0
+ └ IP统计时段 
+   	 └ []
+ ├ 节点统计
+ │ 	 ├ clientNodes :1
+ │ 	 ├ 所有连接               :1
+ │ 	 ├ 活动连接               :1
+ │ 	 ├ 关闭次数               :0
+ │ 	 ├ 绑定user数         :0
+ │ 	 ├ 绑定token数       :0
+ │ 	 └ 等待同步消息响应 :0
+ ├ 群组
+ │ 	 ├ channelmap  :0
+ │ 	 └ groupmap:0
+ └ 拉黑IP 
+   	 └ []
+7818919 [tio-68] INFO  org.tio.core.CloseRunnable - org.tio.server.ServerGroupContext@599d4691, 192.168.43.130:50745 准备关闭连接, isNeedRemove:true, 234981 ms没有收发消息
+7818920 [tio-timer-checkheartbeat-2] INFO  org.tio.server.ServerGroupContext - null, 检查心跳, 共1个连接, 取锁耗时0ms, 循环耗时9ms, 心跳超时时间:120000ms
+7818921 [tio-68] INFO  org.tio.core.ChannelContext - 关闭前192.168.43.130:50745, 关闭后$UNKNOWN:62
+7818921 [tio-70] INFO  c.m.b.s.c.BlockClientAioListener - 连接关闭：server地址为-192.168.43.130:6789
+7818922 [tio-70] INFO  org.tio.core.CloseRunnable - org.tio.client.ClientGroupContext@2cc3ad05, 0:0:0:0:0:0:0:0:50745 准备关闭连接, isNeedRemove:false, 读数据时发生异常
+7818923 [tio-70] INFO  org.tio.core.ChannelContext - 关闭前0:0:0:0:0:0:0:0:50745, 关闭后$UNKNOWN:63
+7821043 [pool-2-thread-1] INFO  c.m.b.socket.client.ClientStarter - 本机IP：192.168.43.130
+7821165 [pool-2-thread-1] INFO  c.m.b.socket.client.ClientStarter - 共有4个成员需要连接：[Member{appId='kfbiC', name='2017301500', ip='192.168.43.130'}, Member{appId='kfbiC', name='2017301500', ip='192.168.41.130'}, Member{appId='kfbiC', name='2017301500', ip='192.168.41.130'}, Member{appId='kfbiC', name='2017301500', ip='192.168.41.130'}]
+7821772 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:0, closed:31, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+7821848 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:0, closed:31, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+7823933 [tio-group-163] INFO  o.t.c.ConnectionCompletionHandler - connected to 192.168.43.130:6789
+7823934 [tio-client-reconn-4] INFO  org.tio.client.AioClient - 0:0:0:0:0:0:0:0:50867,重连耗时:10 ms
+7823934 [tio-group-164] INFO  c.m.b.s.s.BlockServerAioListener - onAfterConnected channelContext:192.168.43.130:50867, isConnected:true, isReconnect:false
+7823934 [tio-group-163] INFO  c.m.b.socket.client.ClientStarter - 连接192.168.43.130:6789成功
+7851773 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:31, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+7851850 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:31, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+7881773 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:31, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+7881850 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:31, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+7911774 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:31, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+7911851 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:31, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+7938922 [tio-timer-checkheartbeat-2] INFO  org.tio.server.ServerGroupContext - 
+null
+ ├ 当前时间:1568565805341
+ ├ 连接统计
+ │ 	 ├ 共接受过连接数  :32
+ │ 	 ├ 当前连接数            :1
+ │ 	 ├ 异IP连接数           :1
+ │ 	 └ 关闭过的连接数  :31
+ ├ 消息统计
+ │ 	 ├ 已处理消息  :8
+ │ 	 ├ 已接收消息(packet/byte):8/6226
+ │ 	 ├ 已发送消息(packet/byte):0/0b
+ │ 	 ├ 平均每次TCP包接收的字节数  :778.25
+ │ 	 └ 平均每次TCP包接收的业务包  :1.0
+ └ IP统计时段 
+   	 └ []
+ ├ 节点统计
+ │ 	 ├ clientNodes :1
+ │ 	 ├ 所有连接               :1
+ │ 	 ├ 活动连接               :1
+ │ 	 ├ 关闭次数               :0
+ │ 	 ├ 绑定user数         :0
+ │ 	 ├ 绑定token数       :0
+ │ 	 └ 等待同步消息响应 :0
+ ├ 群组
+ │ 	 ├ channelmap  :0
+ │ 	 └ groupmap:0
+ └ 拉黑IP 
+   	 └ []
+7938930 [tio-timer-checkheartbeat-2] INFO  org.tio.server.ServerGroupContext - null, 检查心跳, 共1个连接, 取锁耗时0ms, 循环耗时10ms, 心跳超时时间:120000ms
+7941774 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:31, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+7941851 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:31, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+7971775 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:31, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+7971851 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:31, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+8001783 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:31, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+8001852 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:31, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+8031784 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:31, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+8031852 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:31, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+8058930 [tio-timer-checkheartbeat-2] INFO  org.tio.server.ServerGroupContext - 192.168.43.130:50867, 234989 ms没有收发消息
+8058930 [tio-timer-checkheartbeat-2] INFO  org.tio.server.ServerGroupContext - 
+null
+ ├ 当前时间:1568565925349
+ ├ 连接统计
+ │ 	 ├ 共接受过连接数  :32
+ │ 	 ├ 当前连接数            :1
+ │ 	 ├ 异IP连接数           :1
+ │ 	 └ 关闭过的连接数  :31
+ ├ 消息统计
+ │ 	 ├ 已处理消息  :8
+ │ 	 ├ 已接收消息(packet/byte):8/6226
+ │ 	 ├ 已发送消息(packet/byte):0/0b
+ │ 	 ├ 平均每次TCP包接收的字节数  :778.25
+ │ 	 └ 平均每次TCP包接收的业务包  :1.0
+ └ IP统计时段 
+   	 └ []
+ ├ 节点统计
+ │ 	 ├ clientNodes :1
+ │ 	 ├ 所有连接               :1
+ │ 	 ├ 活动连接               :1
+ │ 	 ├ 关闭次数               :0
+ │ 	 ├ 绑定user数         :0
+ │ 	 ├ 绑定token数       :0
+ │ 	 └ 等待同步消息响应 :0
+ ├ 群组
+ │ 	 ├ channelmap  :0
+ │ 	 └ groupmap:0
+ └ 拉黑IP 
+   	 └ []
+8058931 [tio-timer-checkheartbeat-2] INFO  org.tio.server.ServerGroupContext - null, 检查心跳, 共1个连接, 取锁耗时0ms, 循环耗时11ms, 心跳超时时间:120000ms
+8058938 [tio-71] INFO  org.tio.core.CloseRunnable - org.tio.server.ServerGroupContext@599d4691, 192.168.43.130:50867 准备关闭连接, isNeedRemove:true, 234989 ms没有收发消息
+8058939 [tio-71] INFO  org.tio.core.ChannelContext - 关闭前192.168.43.130:50867, 关闭后$UNKNOWN:64
+8058940 [tio-71] INFO  c.m.b.s.c.BlockClientAioListener - 连接关闭：server地址为-192.168.43.130:6789
+8058940 [tio-71] INFO  org.tio.core.CloseRunnable - org.tio.client.ClientGroupContext@2cc3ad05, 0:0:0:0:0:0:0:0:50867 准备关闭连接, isNeedRemove:false, 读数据时发生异常
+8058940 [tio-71] INFO  org.tio.core.ChannelContext - 关闭前0:0:0:0:0:0:0:0:50867, 关闭后$UNKNOWN:65
+8061784 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:0, closed:32, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+8061853 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:0, closed:32, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+8063953 [tio-group-167] INFO  o.t.c.ConnectionCompletionHandler - connected to 192.168.43.130:6789
+8063953 [tio-group-167] INFO  c.m.b.socket.client.ClientStarter - 连接192.168.43.130:6789成功
+8063953 [tio-client-reconn-1] INFO  org.tio.client.AioClient - 0:0:0:0:0:0:0:0:51002,重连耗时:11 ms
+8063953 [tio-group-168] INFO  c.m.b.s.s.BlockServerAioListener - onAfterConnected channelContext:192.168.43.130:51002, isConnected:true, isReconnect:false
+8091785 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:32, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+8091854 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:32, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+8121003 [pool-2-thread-1] INFO  c.m.b.socket.client.ClientStarter - 本机IP：192.168.43.130
+8121157 [pool-2-thread-1] INFO  c.m.b.socket.client.ClientStarter - 共有4个成员需要连接：[Member{appId='kfbiC', name='2017301500', ip='192.168.43.130'}, Member{appId='kfbiC', name='2017301500', ip='192.168.41.130'}, Member{appId='kfbiC', name='2017301500', ip='192.168.41.130'}, Member{appId='kfbiC', name='2017301500', ip='192.168.41.130'}]
+8121785 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:32, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+8121855 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:32, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+8151786 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:32, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+8151855 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:32, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+8178933 [tio-timer-checkheartbeat-2] INFO  org.tio.server.ServerGroupContext - 
+null
+ ├ 当前时间:1568566045352
+ ├ 连接统计
+ │ 	 ├ 共接受过连接数  :33
+ │ 	 ├ 当前连接数            :1
+ │ 	 ├ 异IP连接数           :1
+ │ 	 └ 关闭过的连接数  :32
+ ├ 消息统计
+ │ 	 ├ 已处理消息  :8
+ │ 	 ├ 已接收消息(packet/byte):8/6226
+ │ 	 ├ 已发送消息(packet/byte):0/0b
+ │ 	 ├ 平均每次TCP包接收的字节数  :778.25
+ │ 	 └ 平均每次TCP包接收的业务包  :1.0
+ └ IP统计时段 
+   	 └ []
+ ├ 节点统计
+ │ 	 ├ clientNodes :1
+ │ 	 ├ 所有连接               :1
+ │ 	 ├ 活动连接               :1
+ │ 	 ├ 关闭次数               :0
+ │ 	 ├ 绑定user数         :0
+ │ 	 ├ 绑定token数       :0
+ │ 	 └ 等待同步消息响应 :0
+ ├ 群组
+ │ 	 ├ channelmap  :0
+ │ 	 └ groupmap:0
+ └ 拉黑IP 
+   	 └ []
+8178941 [tio-timer-checkheartbeat-2] INFO  org.tio.server.ServerGroupContext - null, 检查心跳, 共1个连接, 取锁耗时0ms, 循环耗时9ms, 心跳超时时间:120000ms
+8181786 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:32, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+8181855 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:32, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+8211787 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:32, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+8211856 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:32, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+8241788 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:32, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+8241863 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:32, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+8271788 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:32, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+8271863 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:32, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+8298942 [tio-timer-checkheartbeat-2] INFO  org.tio.server.ServerGroupContext - 192.168.43.130:51002, 234988 ms没有收发消息
+8298943 [tio-timer-checkheartbeat-2] INFO  org.tio.server.ServerGroupContext - 
+null
+ ├ 当前时间:1568566165362
+ ├ 连接统计
+ │ 	 ├ 共接受过连接数  :33
+ │ 	 ├ 当前连接数            :1
+ │ 	 ├ 异IP连接数           :1
+ │ 	 └ 关闭过的连接数  :32
+ ├ 消息统计
+ │ 	 ├ 已处理消息  :8
+ │ 	 ├ 已接收消息(packet/byte):8/6226
+ │ 	 ├ 已发送消息(packet/byte):0/0b
+ │ 	 ├ 平均每次TCP包接收的字节数  :778.25
+ │ 	 └ 平均每次TCP包接收的业务包  :1.0
+ └ IP统计时段 
+   	 └ []
+ ├ 节点统计
+ │ 	 ├ clientNodes :1
+ │ 	 ├ 所有连接               :1
+ │ 	 ├ 活动连接               :1
+ │ 	 ├ 关闭次数               :0
+ │ 	 ├ 绑定user数         :0
+ │ 	 ├ 绑定token数       :0
+ │ 	 └ 等待同步消息响应 :0
+ ├ 群组
+ │ 	 ├ channelmap  :0
+ │ 	 └ groupmap:0
+ └ 拉黑IP 
+   	 └ []
+8298944 [tio-timer-checkheartbeat-2] INFO  org.tio.server.ServerGroupContext - null, 检查心跳, 共1个连接, 取锁耗时0ms, 循环耗时0ms, 心跳超时时间:120000ms
+8298951 [tio-73] INFO  org.tio.core.CloseRunnable - org.tio.server.ServerGroupContext@599d4691, 192.168.43.130:51002 准备关闭连接, isNeedRemove:true, 234988 ms没有收发消息
+8298952 [tio-73] INFO  org.tio.core.ChannelContext - 关闭前192.168.43.130:51002, 关闭后$UNKNOWN:66
+8298953 [tio-73] INFO  c.m.b.s.c.BlockClientAioListener - 连接关闭：server地址为-192.168.43.130:6789
+8298954 [tio-73] INFO  org.tio.core.CloseRunnable - org.tio.client.ClientGroupContext@2cc3ad05, 0:0:0:0:0:0:0:0:51002 准备关闭连接, isNeedRemove:false, 读数据时发生异常
+8298954 [tio-73] INFO  org.tio.core.ChannelContext - 关闭前0:0:0:0:0:0:0:0:51002, 关闭后$UNKNOWN:67
+8301789 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:0, closed:33, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+8301864 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:0, closed:33, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+8303965 [tio-group-171] INFO  o.t.c.ConnectionCompletionHandler - connected to 192.168.43.130:6789
+8303966 [tio-group-172] INFO  c.m.b.s.s.BlockServerAioListener - onAfterConnected channelContext:192.168.43.130:51129, isConnected:true, isReconnect:false
+8303966 [tio-client-reconn-2] INFO  org.tio.client.AioClient - 0:0:0:0:0:0:0:0:51129,重连耗时:10 ms
+8303967 [tio-group-171] INFO  c.m.b.socket.client.ClientStarter - 连接192.168.43.130:6789成功
+8331791 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:33, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+8331866 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:33, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+8361791 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:33, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+8361866 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:33, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+8391792 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:33, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+8391868 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:33, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+8418944 [tio-timer-checkheartbeat-2] INFO  org.tio.server.ServerGroupContext - 
+null
+ ├ 当前时间:1568566285363
+ ├ 连接统计
+ │ 	 ├ 共接受过连接数  :34
+ │ 	 ├ 当前连接数            :1
+ │ 	 ├ 异IP连接数           :1
+ │ 	 └ 关闭过的连接数  :33
+ ├ 消息统计
+ │ 	 ├ 已处理消息  :8
+ │ 	 ├ 已接收消息(packet/byte):8/6226
+ │ 	 ├ 已发送消息(packet/byte):0/0b
+ │ 	 ├ 平均每次TCP包接收的字节数  :778.25
+ │ 	 └ 平均每次TCP包接收的业务包  :1.0
+ └ IP统计时段 
+   	 └ []
+ ├ 节点统计
+ │ 	 ├ clientNodes :1
+ │ 	 ├ 所有连接               :1
+ │ 	 ├ 活动连接               :1
+ │ 	 ├ 关闭次数               :0
+ │ 	 ├ 绑定user数         :0
+ │ 	 ├ 绑定token数       :0
+ │ 	 └ 等待同步消息响应 :0
+ ├ 群组
+ │ 	 ├ channelmap  :0
+ │ 	 └ groupmap:0
+ └ 拉黑IP 
+   	 └ []
+8418951 [tio-timer-checkheartbeat-2] INFO  org.tio.server.ServerGroupContext - null, 检查心跳, 共1个连接, 取锁耗时0ms, 循环耗时11ms, 心跳超时时间:120000ms
+8421168 [pool-2-thread-1] INFO  c.m.b.socket.client.ClientStarter - 本机IP：192.168.43.130
+8421321 [pool-2-thread-1] INFO  c.m.b.socket.client.ClientStarter - 共有4个成员需要连接：[Member{appId='kfbiC', name='2017301500', ip='192.168.43.130'}, Member{appId='kfbiC', name='2017301500', ip='192.168.41.130'}, Member{appId='kfbiC', name='2017301500', ip='192.168.41.130'}, Member{appId='kfbiC', name='2017301500', ip='192.168.41.130'}]
+8421793 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:33, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+8421868 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:33, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+8451793 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:33, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+8451868 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:33, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+8481795 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:33, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+8481869 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:33, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+8511795 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:33, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+8511869 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:33, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+8538953 [tio-timer-checkheartbeat-2] INFO  org.tio.server.ServerGroupContext - 192.168.43.130:51129, 234990 ms没有收发消息
+8538953 [tio-timer-checkheartbeat-2] INFO  org.tio.server.ServerGroupContext - 
+null
+ ├ 当前时间:1568566405372
+ ├ 连接统计
+ │ 	 ├ 共接受过连接数  :34
+ │ 	 ├ 当前连接数            :1
+ │ 	 ├ 异IP连接数           :1
+ │ 	 └ 关闭过的连接数  :33
+ ├ 消息统计
+ │ 	 ├ 已处理消息  :8
+ │ 	 ├ 已接收消息(packet/byte):8/6226
+ │ 	 ├ 已发送消息(packet/byte):0/0b
+ │ 	 ├ 平均每次TCP包接收的字节数  :778.25
+ │ 	 └ 平均每次TCP包接收的业务包  :1.0
+ └ IP统计时段 
+   	 └ []
+ ├ 节点统计
+ │ 	 ├ clientNodes :1
+ │ 	 ├ 所有连接               :1
+ │ 	 ├ 活动连接               :1
+ │ 	 ├ 关闭次数               :0
+ │ 	 ├ 绑定user数         :0
+ │ 	 ├ 绑定token数       :0
+ │ 	 └ 等待同步消息响应 :0
+ ├ 群组
+ │ 	 ├ channelmap  :0
+ │ 	 └ groupmap:0
+ └ 拉黑IP 
+   	 └ []
+8538954 [tio-timer-checkheartbeat-2] INFO  org.tio.server.ServerGroupContext - null, 检查心跳, 共1个连接, 取锁耗时0ms, 循环耗时0ms, 心跳超时时间:120000ms
+8538964 [tio-75] INFO  org.tio.core.CloseRunnable - org.tio.server.ServerGroupContext@599d4691, 192.168.43.130:51129 准备关闭连接, isNeedRemove:true, 234990 ms没有收发消息
+8538965 [tio-75] INFO  org.tio.core.ChannelContext - 关闭前192.168.43.130:51129, 关闭后$UNKNOWN:68
+8538965 [tio-75] INFO  c.m.b.s.c.BlockClientAioListener - 连接关闭：server地址为-192.168.43.130:6789
+8538966 [tio-75] INFO  org.tio.core.CloseRunnable - org.tio.client.ClientGroupContext@2cc3ad05, 0:0:0:0:0:0:0:0:51129 准备关闭连接, isNeedRemove:false, 读数据时发生异常
+8538966 [tio-75] INFO  org.tio.core.ChannelContext - 关闭前0:0:0:0:0:0:0:0:51129, 关闭后$UNKNOWN:69
+8541796 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:0, closed:34, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+8541870 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:0, closed:34, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+8543980 [tio-group-175] INFO  c.m.b.s.s.BlockServerAioListener - onAfterConnected channelContext:192.168.43.130:51255, isConnected:true, isReconnect:false
+8543980 [tio-group-176] INFO  o.t.c.ConnectionCompletionHandler - connected to 192.168.43.130:6789
+8543981 [tio-client-reconn-3] INFO  org.tio.client.AioClient - 0:0:0:0:0:0:0:0:51255,重连耗时:9 ms
+8543981 [tio-group-176] INFO  c.m.b.socket.client.ClientStarter - 连接192.168.43.130:6789成功
+8571797 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:34, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+8571871 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:34, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+8601798 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:34, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+8601871 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:34, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+8631799 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:34, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+8631872 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:34, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+8658954 [tio-timer-checkheartbeat-2] INFO  org.tio.server.ServerGroupContext - 
+null
+ ├ 当前时间:1568566525373
+ ├ 连接统计
+ │ 	 ├ 共接受过连接数  :35
+ │ 	 ├ 当前连接数            :1
+ │ 	 ├ 异IP连接数           :1
+ │ 	 └ 关闭过的连接数  :34
+ ├ 消息统计
+ │ 	 ├ 已处理消息  :8
+ │ 	 ├ 已接收消息(packet/byte):8/6226
+ │ 	 ├ 已发送消息(packet/byte):0/0b
+ │ 	 ├ 平均每次TCP包接收的字节数  :778.25
+ │ 	 └ 平均每次TCP包接收的业务包  :1.0
+ └ IP统计时段 
+   	 └ []
+ ├ 节点统计
+ │ 	 ├ clientNodes :1
+ │ 	 ├ 所有连接               :1
+ │ 	 ├ 活动连接               :1
+ │ 	 ├ 关闭次数               :0
+ │ 	 ├ 绑定user数         :0
+ │ 	 ├ 绑定token数       :0
+ │ 	 └ 等待同步消息响应 :0
+ ├ 群组
+ │ 	 ├ channelmap  :0
+ │ 	 └ groupmap:0
+ └ 拉黑IP 
+   	 └ []
+8658963 [tio-timer-checkheartbeat-2] INFO  org.tio.server.ServerGroupContext - null, 检查心跳, 共1个连接, 取锁耗时0ms, 循环耗时9ms, 心跳超时时间:120000ms
+8661800 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:34, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+8661873 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:34, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+8691800 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:34, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+8691873 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:34, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+8721004 [pool-2-thread-1] INFO  c.m.b.socket.client.ClientStarter - 本机IP：192.168.43.130
+8721121 [pool-2-thread-1] INFO  c.m.b.socket.client.ClientStarter - 共有4个成员需要连接：[Member{appId='kfbiC', name='2017301500', ip='192.168.43.130'}, Member{appId='kfbiC', name='2017301500', ip='192.168.41.130'}, Member{appId='kfbiC', name='2017301500', ip='192.168.41.130'}, Member{appId='kfbiC', name='2017301500', ip='192.168.41.130'}]
+8721801 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:34, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+8721873 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:34, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+8751802 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:34, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+8751874 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:34, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+8778963 [tio-timer-checkheartbeat-2] INFO  org.tio.server.ServerGroupContext - 192.168.43.130:51255, 234991 ms没有收发消息
+8778964 [tio-timer-checkheartbeat-2] INFO  org.tio.server.ServerGroupContext - 
+null
+ ├ 当前时间:1568566645383
+ ├ 连接统计
+ │ 	 ├ 共接受过连接数  :35
+ │ 	 ├ 当前连接数            :1
+ │ 	 ├ 异IP连接数           :1
+ │ 	 └ 关闭过的连接数  :34
+ ├ 消息统计
+ │ 	 ├ 已处理消息  :8
+ │ 	 ├ 已接收消息(packet/byte):8/6226
+ │ 	 ├ 已发送消息(packet/byte):0/0b
+ │ 	 ├ 平均每次TCP包接收的字节数  :778.25
+ │ 	 └ 平均每次TCP包接收的业务包  :1.0
+ └ IP统计时段 
+   	 └ []
+ ├ 节点统计
+ │ 	 ├ clientNodes :1
+ │ 	 ├ 所有连接               :1
+ │ 	 ├ 活动连接               :1
+ │ 	 ├ 关闭次数               :0
+ │ 	 ├ 绑定user数         :0
+ │ 	 ├ 绑定token数       :0
+ │ 	 └ 等待同步消息响应 :0
+ ├ 群组
+ │ 	 ├ channelmap  :0
+ │ 	 └ groupmap:0
+ └ 拉黑IP 
+   	 └ []
+8778974 [tio-77] INFO  org.tio.core.CloseRunnable - org.tio.server.ServerGroupContext@599d4691, 192.168.43.130:51255 准备关闭连接, isNeedRemove:true, 234991 ms没有收发消息
+8778975 [tio-77] INFO  org.tio.core.ChannelContext - 关闭前192.168.43.130:51255, 关闭后$UNKNOWN:70
+8778976 [tio-78] INFO  c.m.b.s.c.BlockClientAioListener - 连接关闭：server地址为-192.168.43.130:6789
+8778975 [tio-timer-checkheartbeat-2] INFO  org.tio.server.ServerGroupContext - null, 检查心跳, 共1个连接, 取锁耗时0ms, 循环耗时8ms, 心跳超时时间:120000ms
+8778976 [tio-78] INFO  org.tio.core.CloseRunnable - org.tio.client.ClientGroupContext@2cc3ad05, 0:0:0:0:0:0:0:0:51255 准备关闭连接, isNeedRemove:false, 读数据时发生异常
+8778976 [tio-78] INFO  org.tio.core.ChannelContext - 关闭前0:0:0:0:0:0:0:0:51255, 关闭后$UNKNOWN:71
+8781804 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:0, closed:35, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+8781874 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:0, closed:35, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+8783986 [tio-group-179] INFO  o.t.c.ConnectionCompletionHandler - connected to 192.168.43.130:6789
+8783986 [tio-group-180] INFO  c.m.b.s.s.BlockServerAioListener - onAfterConnected channelContext:192.168.43.130:51396, isConnected:true, isReconnect:false
+8783986 [tio-client-reconn-4] INFO  org.tio.client.AioClient - 0:0:0:0:0:0:0:0:51396,重连耗时:10 ms
+8783986 [tio-group-179] INFO  c.m.b.socket.client.ClientStarter - 连接192.168.43.130:6789成功
+8811817 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:35, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+8811875 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:35, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+8841824 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:35, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+8841876 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:35, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+8871828 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:35, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+8871876 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:35, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+8898977 [tio-timer-checkheartbeat-2] INFO  org.tio.server.ServerGroupContext - 
+null
+ ├ 当前时间:1568566765396
+ ├ 连接统计
+ │ 	 ├ 共接受过连接数  :36
+ │ 	 ├ 当前连接数            :1
+ │ 	 ├ 异IP连接数           :1
+ │ 	 └ 关闭过的连接数  :35
+ ├ 消息统计
+ │ 	 ├ 已处理消息  :8
+ │ 	 ├ 已接收消息(packet/byte):8/6226
+ │ 	 ├ 已发送消息(packet/byte):0/0b
+ │ 	 ├ 平均每次TCP包接收的字节数  :778.25
+ │ 	 └ 平均每次TCP包接收的业务包  :1.0
+ └ IP统计时段 
+   	 └ []
+ ├ 节点统计
+ │ 	 ├ clientNodes :1
+ │ 	 ├ 所有连接               :1
+ │ 	 ├ 活动连接               :1
+ │ 	 ├ 关闭次数               :0
+ │ 	 ├ 绑定user数         :0
+ │ 	 ├ 绑定token数       :0
+ │ 	 └ 等待同步消息响应 :0
+ ├ 群组
+ │ 	 ├ channelmap  :0
+ │ 	 └ groupmap:0
+ └ 拉黑IP 
+   	 └ []
+8898978 [tio-timer-checkheartbeat-2] INFO  org.tio.server.ServerGroupContext - null, 检查心跳, 共1个连接, 取锁耗时0ms, 循环耗时0ms, 心跳超时时间:120000ms
+8901831 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:35, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+8901877 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:35, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+8931839 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:35, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+8931878 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:35, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+8961842 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:35, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+8961878 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:35, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+8991843 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:35, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+8991878 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:35, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+9018980 [tio-timer-checkheartbeat-2] INFO  org.tio.server.ServerGroupContext - 192.168.43.130:51396, 234991 ms没有收发消息
+9018980 [tio-timer-checkheartbeat-2] INFO  org.tio.server.ServerGroupContext - 
+null
+ ├ 当前时间:1568566885399
+ ├ 连接统计
+ │ 	 ├ 共接受过连接数  :36
+ │ 	 ├ 当前连接数            :1
+ │ 	 ├ 异IP连接数           :1
+ │ 	 └ 关闭过的连接数  :35
+ ├ 消息统计
+ │ 	 ├ 已处理消息  :8
+ │ 	 ├ 已接收消息(packet/byte):8/6226
+ │ 	 ├ 已发送消息(packet/byte):0/0b
+ │ 	 ├ 平均每次TCP包接收的字节数  :778.25
+ │ 	 └ 平均每次TCP包接收的业务包  :1.0
+ └ IP统计时段 
+   	 └ []
+ ├ 节点统计
+ │ 	 ├ clientNodes :1
+ │ 	 ├ 所有连接               :1
+ │ 	 ├ 活动连接               :1
+ │ 	 ├ 关闭次数               :0
+ │ 	 ├ 绑定user数         :0
+ │ 	 ├ 绑定token数       :0
+ │ 	 └ 等待同步消息响应 :0
+ ├ 群组
+ │ 	 ├ channelmap  :0
+ │ 	 └ groupmap:0
+ └ 拉黑IP 
+   	 └ []
+9018987 [tio-79] INFO  org.tio.core.CloseRunnable - org.tio.server.ServerGroupContext@599d4691, 192.168.43.130:51396 准备关闭连接, isNeedRemove:true, 234991 ms没有收发消息
+9018987 [tio-timer-checkheartbeat-2] INFO  org.tio.server.ServerGroupContext - null, 检查心跳, 共1个连接, 取锁耗时0ms, 循环耗时10ms, 心跳超时时间:120000ms
+9018988 [tio-79] INFO  org.tio.core.ChannelContext - 关闭前192.168.43.130:51396, 关闭后$UNKNOWN:72
+9018988 [tio-79] INFO  c.m.b.s.c.BlockClientAioListener - 连接关闭：server地址为-192.168.43.130:6789
+9018989 [tio-79] INFO  org.tio.core.CloseRunnable - org.tio.client.ClientGroupContext@2cc3ad05, 0:0:0:0:0:0:0:0:51396 准备关闭连接, isNeedRemove:false, 读数据时发生异常
+9018989 [tio-79] INFO  org.tio.core.ChannelContext - 关闭前0:0:0:0:0:0:0:0:51396, 关闭后$UNKNOWN:73
+9021023 [pool-2-thread-1] INFO  c.m.b.socket.client.ClientStarter - 本机IP：192.168.43.130
+9021143 [pool-2-thread-1] INFO  c.m.b.socket.client.ClientStarter - 共有4个成员需要连接：[Member{appId='kfbiC', name='2017301500', ip='192.168.43.130'}, Member{appId='kfbiC', name='2017301500', ip='192.168.41.130'}, Member{appId='kfbiC', name='2017301500', ip='192.168.41.130'}, Member{appId='kfbiC', name='2017301500', ip='192.168.41.130'}]
+9021843 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:0, closed:36, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+9021879 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:0, closed:36, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+9024001 [tio-group-183] INFO  o.t.c.ConnectionCompletionHandler - connected to 192.168.43.130:6789
+9024001 [tio-group-183] INFO  c.m.b.socket.client.ClientStarter - 连接192.168.43.130:6789成功
+9024001 [tio-client-reconn-1] INFO  org.tio.client.AioClient - 0:0:0:0:0:0:0:0:51628,重连耗时:20 ms
+9024002 [tio-group-184] INFO  c.m.b.s.s.BlockServerAioListener - onAfterConnected channelContext:192.168.43.130:51628, isConnected:true, isReconnect:false
+9051844 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:36, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+9051880 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:36, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+9081844 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:36, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+9081880 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:36, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+9111844 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:36, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+9111881 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:36, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+9138989 [tio-timer-checkheartbeat-2] INFO  org.tio.server.ServerGroupContext - 
+null
+ ├ 当前时间:1568567005408
+ ├ 连接统计
+ │ 	 ├ 共接受过连接数  :37
+ │ 	 ├ 当前连接数            :1
+ │ 	 ├ 异IP连接数           :1
+ │ 	 └ 关闭过的连接数  :36
+ ├ 消息统计
+ │ 	 ├ 已处理消息  :8
+ │ 	 ├ 已接收消息(packet/byte):8/6226
+ │ 	 ├ 已发送消息(packet/byte):0/0b
+ │ 	 ├ 平均每次TCP包接收的字节数  :778.25
+ │ 	 └ 平均每次TCP包接收的业务包  :1.0
+ └ IP统计时段 
+   	 └ []
+ ├ 节点统计
+ │ 	 ├ clientNodes :1
+ │ 	 ├ 所有连接               :1
+ │ 	 ├ 活动连接               :1
+ │ 	 ├ 关闭次数               :0
+ │ 	 ├ 绑定user数         :0
+ │ 	 ├ 绑定token数       :0
+ │ 	 └ 等待同步消息响应 :0
+ ├ 群组
+ │ 	 ├ channelmap  :0
+ │ 	 └ groupmap:0
+ └ 拉黑IP 
+   	 └ []
+9138994 [tio-timer-checkheartbeat-2] INFO  org.tio.server.ServerGroupContext - null, 检查心跳, 共1个连接, 取锁耗时0ms, 循环耗时9ms, 心跳超时时间:120000ms
+9141844 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:36, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+9141881 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:36, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+9210359 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:36, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+9210397 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:36, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+9240361 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:36, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+9240397 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:36, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+9270362 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:36, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+9270398 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:36, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+9297510 [tio-timer-checkheartbeat-2] INFO  org.tio.server.ServerGroupContext - 192.168.43.130:51628, 273499 ms没有收发消息
+9297512 [tio-timer-checkheartbeat-2] INFO  org.tio.server.ServerGroupContext - 
+null
+ ├ 当前时间:1568567163930
+ ├ 连接统计
+ │ 	 ├ 共接受过连接数  :37
+ │ 	 ├ 当前连接数            :1
+ │ 	 ├ 异IP连接数           :1
+ │ 	 └ 关闭过的连接数  :36
+ ├ 消息统计
+ │ 	 ├ 已处理消息  :8
+ │ 	 ├ 已接收消息(packet/byte):8/6226
+ │ 	 ├ 已发送消息(packet/byte):0/0b
+ │ 	 ├ 平均每次TCP包接收的字节数  :778.25
+ │ 	 └ 平均每次TCP包接收的业务包  :1.0
+ └ IP统计时段 
+   	 └ []
+ ├ 节点统计
+ │ 	 ├ clientNodes :1
+ │ 	 ├ 所有连接               :1
+ │ 	 ├ 活动连接               :1
+ │ 	 ├ 关闭次数               :0
+ │ 	 ├ 绑定user数         :0
+ │ 	 ├ 绑定token数       :0
+ │ 	 └ 等待同步消息响应 :0
+ ├ 群组
+ │ 	 ├ channelmap  :0
+ │ 	 └ groupmap:0
+ └ 拉黑IP 
+   	 └ []
+9297514 [tio-timer-checkheartbeat-2] INFO  org.tio.server.ServerGroupContext - null, 检查心跳, 共1个连接, 取锁耗时0ms, 循环耗时11ms, 心跳超时时间:120000ms
+9297521 [tio-81] INFO  org.tio.core.CloseRunnable - org.tio.server.ServerGroupContext@599d4691, 192.168.43.130:51628 准备关闭连接, isNeedRemove:true, 273499 ms没有收发消息
+9297522 [tio-81] INFO  org.tio.core.ChannelContext - 关闭前192.168.43.130:51628, 关闭后$UNKNOWN:74
+9297523 [tio-81] INFO  c.m.b.s.c.BlockClientAioListener - 连接关闭：server地址为-192.168.43.130:6789
+9297523 [tio-81] INFO  org.tio.core.CloseRunnable - org.tio.client.ClientGroupContext@2cc3ad05, 0:0:0:0:0:0:0:0:51628 准备关闭连接, isNeedRemove:false, 读数据时发生异常
+9297524 [tio-81] INFO  org.tio.core.ChannelContext - 关闭前0:0:0:0:0:0:0:0:51628, 关闭后$UNKNOWN:75
+9300362 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:0, closed:37, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+9300398 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:0, closed:37, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+9302535 [tio-group-187] INFO  o.t.c.ConnectionCompletionHandler - connected to 192.168.43.130:6789
+9302536 [tio-client-reconn-2] INFO  org.tio.client.AioClient - 0:0:0:0:0:0:0:0:51849,重连耗时:11 ms
+9302536 [tio-group-188] INFO  c.m.b.s.s.BlockServerAioListener - onAfterConnected channelContext:192.168.43.130:51849, isConnected:true, isReconnect:false
+9302536 [tio-group-187] INFO  c.m.b.socket.client.ClientStarter - 连接192.168.43.130:6789成功
+9321019 [pool-2-thread-1] INFO  c.m.b.socket.client.ClientStarter - 本机IP：192.168.43.130
+9321178 [pool-2-thread-1] INFO  c.m.b.socket.client.ClientStarter - 共有4个成员需要连接：[Member{appId='kfbiC', name='2017301500', ip='192.168.43.130'}, Member{appId='kfbiC', name='2017301500', ip='192.168.41.130'}, Member{appId='kfbiC', name='2017301500', ip='192.168.41.130'}, Member{appId='kfbiC', name='2017301500', ip='192.168.41.130'}]
+9330363 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:37, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+9330399 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:37, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+9360364 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:37, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+9360403 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:37, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+9390367 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:37, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+9390405 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:37, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+9417514 [tio-timer-checkheartbeat-2] INFO  org.tio.server.ServerGroupContext - 
+null
+ ├ 当前时间:1568567283933
+ ├ 连接统计
+ │ 	 ├ 共接受过连接数  :38
+ │ 	 ├ 当前连接数            :1
+ │ 	 ├ 异IP连接数           :1
+ │ 	 └ 关闭过的连接数  :37
+ ├ 消息统计
+ │ 	 ├ 已处理消息  :8
+ │ 	 ├ 已接收消息(packet/byte):8/6226
+ │ 	 ├ 已发送消息(packet/byte):0/0b
+ │ 	 ├ 平均每次TCP包接收的字节数  :778.25
+ │ 	 └ 平均每次TCP包接收的业务包  :1.0
+ └ IP统计时段 
+   	 └ []
+ ├ 节点统计
+ │ 	 ├ clientNodes :1
+ │ 	 ├ 所有连接               :1
+ │ 	 ├ 活动连接               :1
+ │ 	 ├ 关闭次数               :0
+ │ 	 ├ 绑定user数         :0
+ │ 	 ├ 绑定token数       :0
+ │ 	 └ 等待同步消息响应 :0
+ ├ 群组
+ │ 	 ├ channelmap  :0
+ │ 	 └ groupmap:0
+ └ 拉黑IP 
+   	 └ []
+9417524 [tio-timer-checkheartbeat-2] INFO  org.tio.server.ServerGroupContext - null, 检查心跳, 共1个连接, 取锁耗时0ms, 循环耗时9ms, 心跳超时时间:120000ms
+9420368 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:37, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+9420406 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:37, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+9450368 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:37, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+9450407 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:37, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+9480369 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:37, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+9480408 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:37, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+9510369 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:37, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+9510408 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:37, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+9537525 [tio-timer-checkheartbeat-2] INFO  org.tio.server.ServerGroupContext - 192.168.43.130:51849, 234989 ms没有收发消息
+9537526 [tio-timer-checkheartbeat-2] INFO  org.tio.server.ServerGroupContext - 
+null
+ ├ 当前时间:1568567403945
+ ├ 连接统计
+ │ 	 ├ 共接受过连接数  :38
+ │ 	 ├ 当前连接数            :1
+ │ 	 ├ 异IP连接数           :1
+ │ 	 └ 关闭过的连接数  :37
+ ├ 消息统计
+ │ 	 ├ 已处理消息  :8
+ │ 	 ├ 已接收消息(packet/byte):8/6226
+ │ 	 ├ 已发送消息(packet/byte):0/0b
+ │ 	 ├ 平均每次TCP包接收的字节数  :778.25
+ │ 	 └ 平均每次TCP包接收的业务包  :1.0
+ └ IP统计时段 
+   	 └ []
+ ├ 节点统计
+ │ 	 ├ clientNodes :1
+ │ 	 ├ 所有连接               :1
+ │ 	 ├ 活动连接               :1
+ │ 	 ├ 关闭次数               :0
+ │ 	 ├ 绑定user数         :0
+ │ 	 ├ 绑定token数       :0
+ │ 	 └ 等待同步消息响应 :0
+ ├ 群组
+ │ 	 ├ channelmap  :0
+ │ 	 └ groupmap:0
+ └ 拉黑IP 
+   	 └ []
+9537527 [tio-timer-checkheartbeat-2] INFO  org.tio.server.ServerGroupContext - null, 检查心跳, 共1个连接, 取锁耗时0ms, 循环耗时0ms, 心跳超时时间:120000ms
+9537536 [tio-83] INFO  org.tio.core.CloseRunnable - org.tio.server.ServerGroupContext@599d4691, 192.168.43.130:51849 准备关闭连接, isNeedRemove:true, 234989 ms没有收发消息
+9537537 [tio-83] INFO  org.tio.core.ChannelContext - 关闭前192.168.43.130:51849, 关闭后$UNKNOWN:76
+9537537 [tio-84] INFO  c.m.b.s.c.BlockClientAioListener - 连接关闭：server地址为-192.168.43.130:6789
+9537537 [tio-84] INFO  org.tio.core.CloseRunnable - org.tio.client.ClientGroupContext@2cc3ad05, 0:0:0:0:0:0:0:0:51849 准备关闭连接, isNeedRemove:false, 读数据时发生异常
+9537538 [tio-84] INFO  org.tio.core.ChannelContext - 关闭前0:0:0:0:0:0:0:0:51849, 关闭后$UNKNOWN:77
+9540370 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:0, closed:38, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+9540409 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:0, closed:38, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+9542552 [tio-group-191] INFO  c.m.b.s.s.BlockServerAioListener - onAfterConnected channelContext:192.168.43.130:51988, isConnected:true, isReconnect:false
+9542555 [tio-group-192] INFO  o.t.c.ConnectionCompletionHandler - connected to 192.168.43.130:6789
+9542556 [tio-client-reconn-3] INFO  org.tio.client.AioClient - 0:0:0:0:0:0:0:0:51988,重连耗时:21 ms
+9542556 [tio-group-192] INFO  c.m.b.socket.client.ClientStarter - 连接192.168.43.130:6789成功
+9570375 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:38, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+9570410 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:38, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+9600376 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:38, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+9600410 [tio-timer-heartbeat1] INFO  org.tio.client.AioClient - [1]: curr:1, closed:38, received:(0p)(0b), handled:0, sent:(8p)(6226b)
+20415731 [tio-85] INFO  c.m.b.s.c.BlockClientAioListener - 连接关闭：server地址为-192.168.43.130:6789
+20415731 [tio-86] INFO  org.tio.core.CloseRunnable - org.tio.server.ServerGroupContext@599d4691, 192.168.43.130:51988 准备关闭连接, isNeedRemove:true, 读数据时发生异常
+20416383 [tio-85] INFO  org.tio.core.CloseRunnable - org.tio.client.ClientGroupContext@2cc3ad05, 0:0:0:0:0:0:0:0:51988 准备关闭连接, isNeedRemove:false, 读数据时发生异常
+20416553 [tio-86] INFO  org.tio.core.ChannelContext - 关闭前192.168.43.130:51988, 关闭后$UNKNOWN:78
+20416612 [tio-85] INFO  org.tio.core.ChannelContext - 关闭前0:0:0:0:0:0:0:0:51988, 关闭后$UNKNOWN:79
+51365661 [tio-group-195] ERROR o.t.c.ConnectionCompletionHandler - java.io.IOException: 不能访问网络位置。有关网络排除故障的信息，请参阅 Windows 帮助。
+
+java.io.IOException: 不能访问网络位置。有关网络排除故障的信息，请参阅 Windows 帮助。
+
+	at sun.nio.ch.Iocp.translateErrorToIOException(Unknown Source)
+	at sun.nio.ch.Iocp.access$700(Unknown Source)
+	at sun.nio.ch.Iocp$EventHandlerTask.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+51365892 [tio-client-reconn-4] ERROR org.tio.client.AioClient - $UNKNOWN:79,重连耗时:304 ms
+51365893 [tio-group-195] INFO  c.m.b.socket.client.ClientStarter - 连接192.168.43.130:6789失败
+51367319 [pool-2-thread-1] INFO  c.m.b.socket.client.ClientStarter - 本机IP：fe80:0:0:0:7d6a:7407:c8db:2105%eth0
+51367422 [pool-2-thread-1] ERROR c.m.b.socket.client.ClientStarter - 请先启动md_blockchain_manager服务，并配置appId等属性，只有合法联盟链成员才能启动该服务
+51367627 [Thread-388] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@41975e01: startup date [Sun Sep 15 22:31:08 CST 2019]; root of context hierarchy
+51367758 [Thread-388] INFO  o.s.c.s.DefaultLifecycleProcessor - Stopping beans in phase 2147483647
+51367793 [Thread-388] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+51367931 [Thread-388] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
